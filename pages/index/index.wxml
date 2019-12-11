@@ -1,2 +1,8 @@
 <!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
+<view>
+  <!-- <icon class="iconfont icon-icon-test"></icon> -->
+  <!-- <tab-nav /> -->
+  <!-- 轮播图 -->
+  <searchbar />
+  <swiper-img imgsrc="{{img}}"/>
+</view>

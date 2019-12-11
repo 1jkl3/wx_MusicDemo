@@ -1,20 +1,17 @@
-// components/swiper/swiper.js
+// components/tab-cotrl/tab-cotrl.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    imgsrc:{
-      type:Array,
-      value:[]
-    }
+
   },
 
   /**
    * 组件的初始数据
    */
   data: {
-    
+
   },
 
   /**

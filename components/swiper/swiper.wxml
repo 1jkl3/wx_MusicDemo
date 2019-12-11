@@ -1,2 +1,6 @@
 <!--components/swiper/swiper.wxml-->
-<text>components/swiper/swiper.wxml</text>
+<swiper indicator-dots autoplay circular>
+  <swiper-item wx:for="{{imgsrc}}" wx:key="*this" class="swiper-img">
+    <image src="{{item}}" />
+  </swiper-item>
+</swiper>

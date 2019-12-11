@@ -1,11 +1,11 @@
-// pages/index/index.js
+// pages/category/category.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    img: ["/assets/img/1.jpg", "/assets/img/2.jpg", "/assets/img/3.jpg", "/assets/img/4.jpg", "/assets/img/5.jpg"]
+
   },
 
   /**

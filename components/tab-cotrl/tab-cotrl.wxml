@@ -1,0 +1,15 @@
+<!--components/tab-cotrl/tab-cotrl.wxml-->
+<scroll-view scroll-x="{{true}}" class="tab-nav">
+  <view class="tab-item">dsaf</view>
+  <view class="tab-item">dsaf</view>
+  <view class="tab-item">dsaf</view>
+  <view class="tab-item">dsaf</view>
+  <view class="tab-item">dsaf</view>
+  <view class="tab-item">dsaf</view>
+  <view class="tab-item">dsaf</view>
+  <view class="tab-item">dsaf</view>
+  <view class="tab-item">dsaf</view>
+  <view class="tab-item">dsaf</view>
+  <view class="tab-item">dsaf</view>
+  <view class="tab-item">dsaf</view>
+</scroll-view>

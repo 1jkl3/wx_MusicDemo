@@ -1,3 +1,4 @@
+//时间格式修改
 const formatTime = date => {
   const year = date.getFullYear()
   const month = date.getMonth() + 1
