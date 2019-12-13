@@ -1,8 +1,57 @@
 <!--pages/index/index.wxml-->
-<view>
-  <!-- <icon class="iconfont icon-icon-test"></icon> -->
-  <!-- <tab-nav /> -->
-  <!-- 轮播图 -->
-  <searchbar />
-  <swiper-img imgsrc="{{img}}"/>
+<view class="indexclass">
+  <tab-nav tab-nav-class="tabclass {{istabFixed?'':'isactive'}}"  bind:tabindex="tabbarindex" current="{{current}}" />
+  <!-- 搜索tab -->
+  <tab-bar tab-style="tab-style">
+    <view slot="left">
+      <icon class="iconfont icon-liebiao icon-class"></icon>
+    </view>
+    <view slot="center">
+      <input type="text" class="tab-input" placeholder="搜索"></input>
+    </view>
+    <view slot="right">
+      <icon class="iconfont icon-gengduo1 icon-class"></icon>
+    </view>
+  </tab-bar>
+  <!-- 切换标题 -->
+  <!-- <scroll-view class="topic-scroll" scroll-y="{{true}}"> -->
+    <swiper class="topic-title"
+            style="height:{{clientHeight?clientHeight+'px':'auto'}}"
+            bindchange="handletopic" current="{{current}}">
+        <block wx:for="{{4}}" wx:key="*this">
+          <swiper-item>
+            <view class="topic-view">
+              <!-- 切换标签 -->
+              <tab-nav id="tab" bind:tabindex="tabbarindex" current="{{current}}" />
+              <!-- 轮播图 -->
+              <swiper-img imgsrc="{{img}}" />
+              <!-- 九宫格 -->
+              <t-grid />
+            </view>
+            <view>1</view>
+            <view>1</view>
+            <view>1</view>
+            <view>1</view>
+            <view>1</view>
+            <view>1</view>
+            <view>1</view>
+            <view>1</view>
+            <view>1</view>
+            <view>1</view>
+            <view>1</view>
+            <view>1</view>
+            <view>1</view>
+            <view>1</view>
+            <view>1</view>
+            <view>1</view>
+            <view>1</view>
+            <view>1</view>
+            <view>1</view>
+            <view>1</view>
+            <view>1</view>
+            <view>1</view>
+          </swiper-item>
+        </block>
+    </swiper>
+  <!-- </scroll-view> -->
 </view>

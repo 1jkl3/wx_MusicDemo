@@ -1,7 +1,8 @@
 {
   "usingComponents": {
-    "tab-nav":"/components/tab-cotrl/tab-cotrl",
-    "swiper-img":"/components/swiper/swiper",
-    "searchbar":"/miniprogram_npm/weui-miniprogram/searchbar/searchbar"
+    "swiper-img":"/components/index/swiper-img/swiper-img",
+    "tab-bar":"/components/index/tab-bar/tab-bar",
+    "tab-nav": "/components/common/tab-nav/tab-nav",
+    "t-grid": "/components/index/t-grid/t-grid"
   }
 }

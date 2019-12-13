@@ -1,0 +1,18 @@
+/* components/tab-nav/tab-nav.wxss */
+.tab-nav{
+  display: flex;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: white;
+  text-align: center;
+  color: grey;
+}
+.tab-item{
+  flex: 1;
+  font-weight: 550;
+}
+.avctive text{
+  padding: 5px;
+  color: red;
+	border-bottom: 2px solid red;
+}

@@ -1,0 +1,14 @@
+/* components/tab-bar/tab-bar.wxss */
+.tab-bar{
+  display: flex;
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  align-items: center;
+}
+.tab-left,.tab-right{
+  width: 13%;
+}
+.tab-center{
+  flex: 1;
+}

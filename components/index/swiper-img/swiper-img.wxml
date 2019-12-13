@@ -1,5 +1,5 @@
 <!--components/swiper/swiper.wxml-->
-<swiper indicator-dots autoplay circular>
+<swiper indicator-dots autoplay circular indicator-color="#fff" indicator-active-color="#f54242">
   <swiper-item wx:for="{{imgsrc}}" wx:key="*this" class="swiper-img">
     <image src="{{item}}" />
   </swiper-item>

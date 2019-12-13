@@ -1,0 +1,6 @@
+<!-- 页面tab插槽 -->
+<view class="tab-bar tab-style">
+  <view class="tab-left"><slot name="left" /></view>
+  <view class="tab-center"><slot name="center" /></view>
+  <view class="tab-right"><slot name="right" /></view>
+</view>

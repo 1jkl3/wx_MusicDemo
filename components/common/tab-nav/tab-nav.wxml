@@ -1,0 +1,6 @@
+<view class="tab-nav tab-nav-class">
+  <view class="tab-item {{currentindex == index ? 'avctive' : ''}}" 
+        wx:for="{{option}}" wx:key="index" bind:tap="handleactive" data-index="{{index}}">
+    <text>{{item}}</text>
+  </view>
+</view>

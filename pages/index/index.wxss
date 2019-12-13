@@ -1,1 +1,38 @@
 /* pages/index/index.wxss */
+.indexclass{
+  /* height: 100vh; */
+}
+.tab-style{
+  background: red;
+  box-shadow: 0px 2px 1px black;
+}
+.tabclass{
+  position: absolute;
+	top: 88rpx;
+	right: 0;
+	left: 0;
+}
+.icon-class{
+  transform: scale(1.5,1.5);
+  color: white;
+}
+.isactive{
+  visibility: hidden;
+}
+.tab-input{
+  margin: auto;
+  background: white;
+  width: 90%;
+  height: 30px;
+  text-align: center;
+  border-radius: 15px;
+}
+.topic-scroll{
+  /* height: calc(100% - 88rpx); */
+}
+.topic-title{
+  /* width: 100%; */
+}
+.topic-view{
+  /* width: 100%; */
+}

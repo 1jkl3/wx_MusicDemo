@@ -1,0 +1,10 @@
+<!--components/index/t-grid/t-grid.wxml-->
+<view class="t-grid">
+  <view class="t-grid-none" wx:for="{{gird}}" wx:key="index"
+        bind:tap="toaboutpath">
+    <view class="t-grid-item" >
+      <icon class="iconfont {{item.img}}"></icon>
+    </view>
+    <text>{{item.text}}</text>
+  </view>
+</view>
