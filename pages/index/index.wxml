@@ -1,57 +1,137 @@
 <!--pages/index/index.wxml-->
-<view class="indexclass">
-  <tab-nav tab-nav-class="tabclass {{istabFixed?'':'isactive'}}"  bind:tabindex="tabbarindex" current="{{current}}" />
+<view>
   <!-- 搜索tab -->
-  <tab-bar tab-style="tab-style">
-    <view slot="left">
-      <icon class="iconfont icon-liebiao icon-class"></icon>
-    </view>
-    <view slot="center">
-      <input type="text" class="tab-input" placeholder="搜索"></input>
-    </view>
-    <view slot="right">
-      <icon class="iconfont icon-gengduo1 icon-class"></icon>
-    </view>
-  </tab-bar>
-  <!-- 切换标题 -->
-  <!-- <scroll-view class="topic-scroll" scroll-y="{{true}}"> -->
-    <swiper class="topic-title"
-            style="height:{{clientHeight?clientHeight+'px':'auto'}}"
-            bindchange="handletopic" current="{{current}}">
-        <block wx:for="{{4}}" wx:key="*this">
-          <swiper-item>
-            <view class="topic-view">
-              <!-- 切换标签 -->
-              <tab-nav id="tab" bind:tabindex="tabbarindex" current="{{current}}" />
-              <!-- 轮播图 -->
-              <swiper-img imgsrc="{{img}}" />
-              <!-- 九宫格 -->
-              <t-grid />
-            </view>
-            <view>1</view>
-            <view>1</view>
-            <view>1</view>
-            <view>1</view>
-            <view>1</view>
-            <view>1</view>
-            <view>1</view>
-            <view>1</view>
-            <view>1</view>
-            <view>1</view>
-            <view>1</view>
-            <view>1</view>
-            <view>1</view>
-            <view>1</view>
-            <view>1</view>
-            <view>1</view>
-            <view>1</view>
-            <view>1</view>
-            <view>1</view>
-            <view>1</view>
-            <view>1</view>
-            <view>1</view>
-          </swiper-item>
-        </block>
+  <scroll-view scroll-y bind:scroll="handlescroll" class="scrollheight">
+    <tab-bar tab-style="tab-style">
+      <view slot="left">
+        <icon class="iconfont icon-liebiao icon-class"></icon>
+      </view>
+      <view slot="center">
+        <input type="text" class="tab-input" placeholder="搜索"></input>
+      </view>
+      <view slot="right">
+        <icon class="iconfont icon-gengduo1 icon-class"></icon>
+      </view>
+    </tab-bar>
+    <!-- 吸顶标签 -->
+    <tab-nav tab-nav-class="tab" wx:if="{{istabFixed}}" 
+    bind:tabindex="tabbarindex" current="{{current}}" />
+    <!-- 切换标签 -->
+    <tab-nav id="tabout" bind:tabindex="tabbarindex" current="{{current}}" />
+    <!-- 切换标题 -->
+    <swiper style="height:{{swiper_height+'px'}}" bindchange="handletopic" 
+    current="{{current}}">
+      <!-- 个性推荐 -->
+      <swiper-item item-id="1">
+        <view class="topic-view-0">
+          <!-- 轮播图 -->
+          <swiper-img imgsrc="{{img}}" />
+          <!-- 九宫格 -->
+          <t-grid />
+          <view>1</view>
+          <view>1</view>
+          <view>1</view>
+          <view>1</view>
+          <view>1</view>
+          <view>1</view>
+          <view>1</view>
+          <view>1</view>
+          <view>1</view>
+          <view>1</view>
+          <view>1</view>
+          <view>1</view>
+          <view>1</view>
+          <view>1</view>
+          <view>1</view>
+          <view>1</view>
+          <view>1</view>
+          <view>1</view>
+          <view>1</view>
+          <view>1</view>
+          <view>1</view>
+          <view>1</view>
+          <view>1</view>
+        </view>
+      </swiper-item>
+      <!-- 歌单 -->
+      <swiper-item item-id="2">
+        <view class="topic-view-1">
+          <view wx:for="{{testdata}}" wx:key="*this">{{item}}</view>
+          <!-- <view>2</view>
+          <view>3</view>
+          <view>4</view>
+          <view>5</view>
+          <view>6</view>
+          <view>7</view>
+          <view>8</view>
+          <view>9</view>
+          <view>10</view>
+          <view>11</view> -->
+        </view>
+      </swiper-item>
+      <!-- 主播电台 -->
+      <swiper-item item-id="3">
+        <view class="topic-view-2">
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+          <view>3</view>
+        </view>
+      </swiper-item>
+      <!-- 排行榜 -->
+      <swiper-item item-id="4">
+        <view class="topic-view-3">
+          <view>4</view>
+          <view>4</view>
+          <view>4</view>
+          <view>4</view>
+          <view>4</view>
+          <view>4</view>
+          <view>4</view>
+          <view>4</view>
+          <view>4</view>
+          <view>4</view>
+          <view>4</view>
+          <view>4</view>
+          <view>4</view>
+          <view>4</view>
+          <view>4</view>
+          <view>4</view>
+          <view>4</view>
+          <view>4</view>
+        </view>
+      </swiper-item>
     </swiper>
-  <!-- </scroll-view> -->
+  </scroll-view>
 </view>
