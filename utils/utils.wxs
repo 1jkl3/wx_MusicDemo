@@ -1,0 +1,23 @@
+var isEmpy = function handleData(data){
+  if (!data) {
+    return false
+  }else if(typeof data == "string"){
+    if(data == " " || data == null || data.trim == ""){
+      return false
+    }
+  } else if (typeof data == "object"){
+      if(data.length){
+        return false
+      }else{
+      if(Object.keys(data).length == 0){
+        return false
+      }
+    }
+  } else if (typeof data == "bollean"){
+    return data
+  }
+  return true
+}
+module.exports = {
+  isEmpy: isEmpy
+};

@@ -1,0 +1,12 @@
+/* components/index/music-list/music-list.wxss */
+.testbody{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.test-item{
+  width: 33%;
+  height: 300rpx;
+  padding: 16rpx 0;
+}

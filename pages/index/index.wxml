@@ -27,7 +27,9 @@
           <!-- 轮播图 -->
           <swiper-img imgsrc="{{img}}" />
           <!-- 九宫格 -->
-          <t-grid />
+          <t-grid class="show-class"/>
+          <!-- 主题内容 -->
+          <music-list />
           <view>1</view>
           <view>1</view>
           <view>1</view>

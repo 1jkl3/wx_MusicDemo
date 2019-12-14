@@ -3,8 +3,8 @@ Component({
   /**
    * 组件的属性列表
    */
-  options:{
-    addGlobalClass:true
+  options: {
+    addGlobalClass: true
   },
   properties: {
 
@@ -22,10 +22,6 @@ Component({
       {
         img: 'icon-yuanzhuo',
         text: "每日歌曲推荐"
-      },
-      {
-        img: 'icon-bangdan',
-        text: "云音乐新歌榜"
       },
       {
         img: 'icon-bangdan',

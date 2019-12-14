@@ -25,4 +25,6 @@
   text-align: center;
   border-radius: 15px;
 }
-
+.show-class{
+  border-bottom: 5px solid #F7F7F7;
+}

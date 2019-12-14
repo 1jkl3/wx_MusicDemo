@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "music-detail": "/components/common/music-detail/music-detail"
+  }
+}

@@ -1,0 +1,8 @@
+<!--components/common/music-detail/music-detail.wxml-->
+<view class="recom-container">
+  <view class="recom-title">
+    <view class="left-title"><slot name="tag-slot" /></view>
+    <view class="right-title"><slot name="tagright-title" /></view>
+  </view>
+  <view class="recom-body"><slot name="body-slot" /></view>
+</view>

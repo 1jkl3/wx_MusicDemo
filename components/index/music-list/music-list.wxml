@@ -1,0 +1,16 @@
+<!--components/index/music-list/music-list.wxml-->
+<view class="music-list-style">
+  <music-detail>
+    <view slot="body-slot" class="testbody">
+      <view class="test-item">
+        <view style="height:80%;background: blue;"></view>
+        <view style="height:20%;">
+          <text>nihoa</text>
+        </view>
+      </view>
+      <view class="test-item">第二</view>
+      <view class="test-item">第三</view>
+      <view class="test-item">第四</view>
+    </view>
+  </music-detail>
+</view>

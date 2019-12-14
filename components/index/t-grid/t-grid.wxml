@@ -1,7 +1,7 @@
 <!--components/index/t-grid/t-grid.wxml-->
-<view class="t-grid">
+<view class="t-grid show-class">
   <view class="t-grid-none" wx:for="{{gird}}" wx:key="index"
-        bind:tap="toaboutpath">
+        bind:tap="toaboutpath" data-index="{{index}}">
     <view class="t-grid-item" >
       <icon class="iconfont {{item.img}}"></icon>
     </view>

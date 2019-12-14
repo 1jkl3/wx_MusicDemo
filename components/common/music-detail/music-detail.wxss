@@ -1,0 +1,25 @@
+/* components/common/music-detail/music-detail.wxss */
+.recom-container{
+   
+}
+.recom-title{
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: red;
+}
+.left-title{
+  height: 100%;
+  flex: 1;
+}
+.right-title{
+  flex: 1;
+  height: 100%;
+}
+.recom-body{
+  width: 100%;
+  height: auto;
+}
