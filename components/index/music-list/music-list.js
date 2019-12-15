@@ -7,7 +7,13 @@ Component({
     addGlobalClass: true
   },
   properties: {
-
+    list:{
+      type:Object,
+      value:[],
+      observer:function(a,b){
+        console.log(a)
+      }
+    }
   },
 
   /**

@@ -29,36 +29,16 @@
           <!-- 九宫格 -->
           <t-grid class="show-class"/>
           <!-- 主题内容 -->
-          <music-list />
-          <view>1</view>
-          <view>1</view>
-          <view>1</view>
-          <view>1</view>
-          <view>1</view>
-          <view>1</view>
-          <view>1</view>
-          <view>1</view>
-          <view>1</view>
-          <view>1</view>
-          <view>1</view>
-          <view>1</view>
-          <view>1</view>
-          <view>1</view>
-          <view>1</view>
-          <view>1</view>
-          <view>1</view>
-          <view>1</view>
-          <view>1</view>
-          <view>1</view>
-          <view>1</view>
-          <view>1</view>
-          <view>1</view>
+          <block wx:for="{{musicList}}" wx:key="index">
+            <music-list list="{{item}}" />
+          </block>
+         
         </view>
       </swiper-item>
       <!-- 歌单 -->
       <swiper-item item-id="2">
         <view class="topic-view-1">
-          <view wx:for="{{testdata}}" wx:key="*this">{{item}}</view>
+          <view wx:for="{{testdata}}" wx:key="index">{{item}}</view>
           <!-- <view>2</view>
           <view>3</view>
           <view>4</view>

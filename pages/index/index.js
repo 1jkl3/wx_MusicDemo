@@ -12,7 +12,38 @@ Page({
     swiper_height:0,
     scrollTop:0,
     //异步测试
-    testdata:[]
+    testdata:[],
+    musicList:[
+      {
+        L_id:"0",
+        L_title:"推荐歌单",
+        L_icon:"icon-changyongtubiao-xianxingdaochu-zhuanqu-",
+        L_rigth_title:"更多",
+        L_items:[
+          {
+            Mid: "001",
+            title: "你都不吃了",
+            imgUrl: "/assets/img/1.jpg",
+            M_icon:"icon-erji",
+            getupNum: 0
+          },
+          {
+            Mid: "002",
+            title: "dasff",
+            imgUrl: "/assets/img/2.jpg",
+            M_icon: "icon-erji",
+            getupNum: 1
+          },
+          {
+            Mid: "003",
+            title: "nichoaf",
+            imgUrl: "/assets/img/3.jpg",
+            M_icon: "icon-erji",
+            getupNum: 2
+          }
+        ]
+      }
+    ]
   },
   //点击切换主题
   tabbarindex(e){

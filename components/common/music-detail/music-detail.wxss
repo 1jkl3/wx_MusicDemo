@@ -1,7 +1,4 @@
 /* components/common/music-detail/music-detail.wxss */
-.recom-container{
-   
-}
 .recom-title{
   height: 80rpx;
   line-height: 80rpx;
@@ -9,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: red;
+  background: white;
 }
 .left-title{
   height: 100%;

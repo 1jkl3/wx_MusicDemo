@@ -18,6 +18,10 @@ var isEmpy = function handleData(data){
   }
   return true
 }
+var handleData = function(data,string){
+  return data+string;
+}
 module.exports = {
-  isEmpy: isEmpy
+  isEmpy: isEmpy,
+  handleData: handleData
 };

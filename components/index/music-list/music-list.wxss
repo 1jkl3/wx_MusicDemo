@@ -8,5 +8,27 @@
 .test-item{
   width: 33%;
   height: 300rpx;
-  padding: 16rpx 0;
+  /* padding: 16rpx 0; */
+}
+.title-before{
+  border-left: 2px solid red;
+}
+.item-imgstr{
+  height:80%;
+  position: relative;
+}
+.item-imgstr .ab-text{
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+}
+.item-imgstr image{
+  height: 100%;
+  width: 100%;
+}
+.ab-text{
+  color: white;
+}
+.item-title{
+  height:20%;
 }
