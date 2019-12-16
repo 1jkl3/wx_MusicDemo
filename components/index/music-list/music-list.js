@@ -11,7 +11,7 @@ Component({
       type:Object,
       value:[],
       observer:function(a,b){
-        console.log(a)
+        // console.log(a)
       }
     }
   },
@@ -27,6 +27,13 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    getupDetail(e){
+      var url = e.currentTarget.dataset.path;
+      var param = e.currentTarget.dataset.Mid;
+      wx.navigateTo({
+        url: url+'?'+param,
+      })
+      console.log(e.currentTarget.dataset)
+    }
   }
 })

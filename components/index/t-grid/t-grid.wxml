@@ -1,10 +1,12 @@
 <!--components/index/t-grid/t-grid.wxml-->
 <view class="t-grid show-class">
-  <view class="t-grid-none" wx:for="{{gird}}" wx:key="index"
-        bind:tap="toaboutpath" data-index="{{index}}">
-    <view class="t-grid-item" >
-      <icon class="iconfont {{item.img}}"></icon>
+  <block wx:for="{{gird}}" wx:key="index">
+    <view hover-class="hover-active" class="t-grid-none"
+     bind:tap="toaboutpath" data-index="{{index}}">
+      <view class="t-grid-item">
+        <icon class="iconfont {{item.img}}"></icon>
+      </view>
+      <text>{{item.text}}</text>
     </view>
-    <text>{{item.text}}</text>
-  </view>
+  </block>
 </view>

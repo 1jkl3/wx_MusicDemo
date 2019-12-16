@@ -22,14 +22,43 @@ Page({
         L_items:[
           {
             Mid: "001",
-            title: "你都不吃了",
+            title: "你都不吃了dasf是我们的简阳",
             imgUrl: "/assets/img/1.jpg",
             M_icon:"icon-erji",
             getupNum: 0
           },
           {
             Mid: "002",
-            title: "dasff",
+            title: "dasfffasf",
+            imgUrl: "/assets/img/2.jpg",
+            M_icon: "icon-erji",
+            getupNum: 1
+          },
+          {
+            Mid: "003",
+            title: "nichoaf",
+            imgUrl: "/assets/img/3.jpg",
+            M_icon: "icon-erji",
+            getupNum: 2
+          }
+        ]
+      },
+      {
+        L_id: "1",
+        L_title: "人物公馆",
+        L_icon: "icon-changyongtubiao-xianxingdaochu-zhuanqu-",
+        L_rigth_title: "更多",
+        L_items: [
+          {
+            Mid: "001",
+            title: "你都不吃了发声方法副本你发撒否哦你",
+            imgUrl: "/assets/img/1.jpg",
+            M_icon: "icon-erji",
+            getupNum: 0
+          },
+          {
+            Mid: "002",
+            title: "dasfffasfsddfasdsadsadsadasfasdsf",
             imgUrl: "/assets/img/2.jpg",
             M_icon: "icon-erji",
             getupNum: 1
@@ -43,6 +72,68 @@ Page({
           }
         ]
       }
+    ],
+    palyList: [
+      {
+        p_id: 1,
+        p_left_title: "全部歌单",
+        p_icon:"icon-changyongtubiao-xianxingdaochu-zhuanqu-",
+        p_right: [
+          "欧美",
+          "民谣",
+          "电子"
+        ],
+        p_items: [
+          {
+            t_id: 0,
+            t_img: "/assets/img/1.jpg",
+            t_title: "safagfa打算方法方法沙发沙发阿萨德撒沙发沙发",
+            t_num: 0
+          },
+          {
+            t_id: 1,
+            t_img: "/assets/img/2.jpg",
+            t_title: "sff年底asofo案发后发送方大发放ifhasofhasofo爱算法哦吼爱搜if奥is费后is",
+            t_num: 1
+          },
+          {
+            t_id: 2,
+            t_img: "/assets/img/3.jpg",
+            t_title: "发送方飞得更高阿大声道我的却无法却无法我问过为",
+            t_num: 2
+          }
+        ]
+      },
+      {
+        p_id: 2,
+        p_left_title: "全部歌单",
+        p_icon: "icon-changyongtubiao-xianxingdaochu-zhuanqu-",
+        p_right: [
+          "欧美",
+          "民谣",
+          "电子"
+        ],
+        p_items: [
+          {
+            t_id: 3,
+            t_img: "/assets/img/1.jpg",
+            t_title: "safagfa打算方法方法沙发沙发阿萨德撒沙发沙发",
+            t_num: 3
+          },
+          {
+            t_id: 4,
+            t_img: "/assets/img/2.jpg",
+            t_title: "sff年底asofo案发后发送方大发放ifhasofhasofo爱算法哦吼爱搜if奥is费后is",
+            t_num: 4
+          },
+          {
+            t_id: 5,
+            t_img: "/assets/img/3.jpg",
+            t_title: "发送方飞得更高阿大声道我的却无法却无法我问过为",
+            t_num: 5
+          }
+        ]
+      }
     ]
   },
   //点击切换主题
@@ -50,6 +141,12 @@ Page({
     var that = this
     that.setData({
       current: e.detail.index
+    })
+    wx.navigateTo({
+      url: 'pages/palylist/palylist',
+      success:function(){
+        console.log("歌单")
+      }
     })
   },
   //滑动切换主题
@@ -113,6 +210,11 @@ Page({
         swiper_height: res.height
       });
     })
+    that.get_wxml(`#tabout`, (res) => {
+      that.setData({
+        scrollTop: res.top
+      })
+    })
   },
   
   /**
@@ -120,12 +222,7 @@ Page({
    */
   onShow: function () {
     var that = this
-    that.get_wxml(`#tabout`, (res) => {
-      // console.log(res.top)
-      that.setData({
-        scrollTop:res.top
-      })
-    })
+    
   },
 
   /**

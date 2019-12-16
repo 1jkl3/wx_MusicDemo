@@ -31,3 +31,6 @@
   transform: translate(-50%,-50%); */
   color: black;
 }
+.hover-active{
+  background: rgba(194, 191, 191, 0.74);
+}

@@ -1,11 +1,9 @@
 /* components/common/music-detail/music-detail.wxss */
 .recom-title{
   height: 80rpx;
-  line-height: 80rpx;
+  /* line-height: 80rpx; */
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   background: white;
 }
 .left-title{

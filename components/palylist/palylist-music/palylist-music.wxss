@@ -1,0 +1,61 @@
+/* components/palylist/palylist-music/palylist-music.wxss */
+.palylist-title{
+  font-size: 32rpx;
+  display: flex;
+  align-items: center;
+}
+.palylist-left{
+  height: 46rpx;
+  width: 180rpx;
+  margin-top: 25rpx;
+  margin-left: 10rpx;
+  border: 1px solid gray;
+  border-radius: 18rpx;
+}
+
+.stance{
+  width: 10%;
+}
+.palylist-right-title{
+  line-height: 80rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 28rpx;
+}
+.palylist-body{
+  column-count: 2;
+  width: 100%;
+  column-gap: 10rpx;
+}
+.palylist-body-item{
+  break-inside: avoid;
+  width: 100%;
+  height: 440rpx;
+}
+.palylist-body-img{
+  width: 100%;
+  height: 80%;
+  position:relative;
+}
+.listen-num{
+  position: absolute;
+  display: inline-block;
+  right: 0;
+}
+.palylist-body-title{
+  height: 20%;
+}
+.palylist-body-title{
+  font-size: 28rpx;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.palylist-body-img image{
+  width: 100%;
+  height: 100%;
+}

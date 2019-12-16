@@ -9,7 +9,7 @@
       <view slot="body-slot" class="testbody">
         <block wx:for="{{list.L_items}}" wx:for-item="itemName" 
                wx:key="index2" data-index="{{index2}}" wx:for-index="index2">
-          <view class="test-item">
+          <view class="test-item" bind:tap="getupDetail" data-items="{{itemName}}">
             <view class="item-imgstr">
               <view class="ab-text">
                 <icon class="iconfont icon-erji">

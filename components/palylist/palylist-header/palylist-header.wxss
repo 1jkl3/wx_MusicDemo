@@ -1,0 +1,32 @@
+/* components/palylist/header-view/header-view.wxss */
+.header-class{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 280rpx;
+  background: rgb(137, 137, 136);
+}
+.header-img-class{
+  padding-top: 15rpx;
+  height: 180rpx;
+  width: 24%;
+}
+.header-img-class image{
+  height: 100%;
+  width: 100%;
+}
+.header-body-class{
+  padding-top: 15rpx;
+  width: 70%;
+  height: 190rpx;
+}
+.header-body-class text{
+  color: white;
+}
+.title-style{
+  font-size: 28rpx;
+}
+.title-style-less{
+  font-size: 24rpx;
+  opacity: 0.8;
+}

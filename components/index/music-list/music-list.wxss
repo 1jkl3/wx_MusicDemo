@@ -1,34 +1,52 @@
 /* components/index/music-list/music-list.wxss */
-.testbody{
+
+.testbody {
   display: flex;
   justify-content: space-between;
   align-content: center;
   flex-wrap: wrap;
 }
-.test-item{
+
+.test-item {
   width: 33%;
-  height: 300rpx;
+  height: 400rpx;
   /* padding: 16rpx 0; */
 }
-.title-before{
+
+.title-before {
   border-left: 2px solid red;
 }
-.item-imgstr{
-  height:80%;
+
+.item-imgstr {
+  height: 75%;
   position: relative;
 }
-.item-imgstr .ab-text{
+
+.item-imgstr .ab-text {
   display: inline-block;
   position: absolute;
   right: 0px;
 }
-.item-imgstr image{
+
+.item-imgstr image {
   height: 100%;
   width: 100%;
 }
-.ab-text{
+
+.ab-text {
   color: white;
 }
-.item-title{
-  height:20%;
+
+.item-title {
+  height: 25%;
+}
+
+.item-title text{
+  font-size: 28rpx;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }

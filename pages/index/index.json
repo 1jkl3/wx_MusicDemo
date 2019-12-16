@@ -4,6 +4,9 @@
     "tab-bar":"/components/index/tab-bar/tab-bar",
     "tab-nav": "/components/common/tab-nav/tab-nav",
     "t-grid": "/components/index/t-grid/t-grid",
-    "music-list": "/components/index/music-list/music-list"
+    "music-list": "/components/index/music-list/music-list",
+    "palylist-header":"/components/palylist/palylist-header/palylist-header",
+    "palylist-music": "/components/palylist/palylist-music/palylist-music"
+
   }
 }

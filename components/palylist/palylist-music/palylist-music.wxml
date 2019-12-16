@@ -1,0 +1,36 @@
+<!--components/palylist/palylist-music/palylist-music.wxml-->
+<wxs src="../../../utils/utils.wxs" module="tools" />
+<view>
+  <music-detail>
+    <view slot="tag-slot" class="palylist-title">
+      <view class="palylist-left">
+        <text>{{palyData.p_left_title}}</text>
+        <icon class="iconfont {{palyData.p_icon}}"></icon>
+      </view>
+    </view>
+    <view slot="tagright-title" class="palylist-right-title">
+      <view class="stance"></view>
+      <!-- 遍历右标签 -->
+      <block wx:for="{{palyData.p_right}}" wx:key="index">
+        <view data-index="{{index}}" data-info="{{item}}">{{item}}</view>
+      </block>
+    </view>
+    <view slot="body-slot" class="palylist-body">
+      <block wx:for="{{palyData.p_items}}" wx:key="index">
+        <view class="palylist-body-item">
+          <view class="palylist-body-img">
+            <view class="listen-num">
+              <icon class="iconfont icon-erji">
+                <text>{{tools.handleData(item.t_num,'万')}}</text>
+              </icon>
+            </view>
+            <image src="{{item.t_img}}"></image>
+          </view>
+          <view class="palylist-body-title">
+            <text>{{item.t_title}}</text>
+          </view>
+        </view>
+      </block>
+    </view>
+  </music-detail>
+</view>

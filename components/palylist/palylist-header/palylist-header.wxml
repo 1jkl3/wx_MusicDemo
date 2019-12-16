@@ -1,0 +1,13 @@
+<!--components/palylist/header-view/header-view.wxml-->
+<view class="header-class">
+  <view class="header-img-class">
+    <image src="/assets/img/1.jpg"></image>
+  </view>
+  <view class="header-body-class">
+  <icon class="iconfont icon-star" style="color:orange;"><text> 精品歌单 </text></icon>
+    <icon class="iconfont icon-changyongtubiao-xianxingdaochu-zhuanqu-" style="color:white;"></icon>
+    <text>\n</text>
+    <text class="title-style">[MV]韩国椅子舞合集\n</text>
+    <text class="title-style-less">椅子在韩国，是一个热爱生活的东西</text>
+  </view>
+</view>

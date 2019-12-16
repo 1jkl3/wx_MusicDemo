@@ -11,14 +11,14 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "color":"#222222",
-    "backgroundColor":"#808080",
-    "selectedColor":"#fff",
+    "color": "#222222",
+    "backgroundColor": "#808080",
+    "selectedColor": "#fff",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath":"assets/img/index.png",
-        "selectedIconPath":"./assets/img/index2.png",
+        "iconPath": "assets/img/index.png",
+        "selectedIconPath": "./assets/img/index2.png",
         "text": "首页"
       },
       {

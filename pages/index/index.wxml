@@ -14,41 +14,31 @@
       </view>
     </tab-bar>
     <!-- 吸顶标签 -->
-    <tab-nav tab-nav-class="tab" wx:if="{{istabFixed}}" 
-    bind:tabindex="tabbarindex" current="{{current}}" />
+    <tab-nav tab-nav-class="tab" wx:if="{{istabFixed}}" bind:tabindex="tabbarindex" current="{{current}}" />
     <!-- 切换标签 -->
     <tab-nav id="tabout" bind:tabindex="tabbarindex" current="{{current}}" />
     <!-- 切换标题 -->
-    <swiper style="height:{{swiper_height+'px'}}" bindchange="handletopic" 
-    current="{{current}}">
+    <swiper style="height:{{swiper_height+'px'}}" bindchange="handletopic" current="{{current}}">
       <!-- 个性推荐 -->
       <swiper-item item-id="1">
         <view class="topic-view-0">
           <!-- 轮播图 -->
           <swiper-img imgsrc="{{img}}" />
           <!-- 九宫格 -->
-          <t-grid class="show-class"/>
+          <t-grid class="show-class" />
           <!-- 主题内容 -->
           <block wx:for="{{musicList}}" wx:key="index">
             <music-list list="{{item}}" />
           </block>
-         
         </view>
       </swiper-item>
       <!-- 歌单 -->
       <swiper-item item-id="2">
         <view class="topic-view-1">
-          <view wx:for="{{testdata}}" wx:key="index">{{item}}</view>
-          <!-- <view>2</view>
-          <view>3</view>
-          <view>4</view>
-          <view>5</view>
-          <view>6</view>
-          <view>7</view>
-          <view>8</view>
-          <view>9</view>
-          <view>10</view>
-          <view>11</view> -->
+          <palylist-header />
+          <block wx:for="{{palyList}}" wx:key="index">
+            <palylist-music palyData="{{item}}" />
+          </block>
         </view>
       </swiper-item>
       <!-- 主播电台 -->
