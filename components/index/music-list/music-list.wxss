@@ -12,7 +12,10 @@
   height: 400rpx;
   /* padding: 16rpx 0; */
 }
-
+.tag-class{
+  color: black;
+  margin-top: 16rpx;
+}
 .title-before {
   border-left: 2px solid red;
 }

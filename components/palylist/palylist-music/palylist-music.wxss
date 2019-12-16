@@ -1,18 +1,16 @@
 /* components/palylist/palylist-music/palylist-music.wxss */
-.palylist-title{
-  font-size: 32rpx;
-  display: flex;
-  align-items: center;
-}
 .palylist-left{
-  height: 46rpx;
-  width: 180rpx;
-  margin-top: 25rpx;
-  margin-left: 10rpx;
+  /* display: inline-block; */
+  font-size: 32rpx;
   border: 1px solid gray;
-  border-radius: 18rpx;
+  width: 170rpx;
+  border-radius: 30rpx;
+  background: white;
+  height: 50rpx;
+  margin-top: 10rpx;
+  text-align: center;
+  line-height: 50rpx;
 }
-
 .stance{
   width: 10%;
 }

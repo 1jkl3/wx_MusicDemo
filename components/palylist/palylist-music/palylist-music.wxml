@@ -3,9 +3,9 @@
 <view>
   <music-detail>
     <view slot="tag-slot" class="palylist-title">
-      <view class="palylist-left">
+      <view class="palylist-left" bind:tap="playlistPath">
         <text>{{palyData.p_left_title}}</text>
-        <icon class="iconfont {{palyData.p_icon}}"></icon>
+        <icon size="16" class="iconfont {{palyData.p_icon}}"></icon>
       </view>
     </view>
     <view slot="tagright-title" class="palylist-right-title">

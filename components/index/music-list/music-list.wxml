@@ -2,9 +2,9 @@
 <wxs src="../../../utils/utils.wxs" module="tools" />
 <view class="music-list-style">
     <music-detail>
-      <view slot="tag-slot" style="color: black;">
+      <view slot="tag-slot" class="tag-class">
         <text class="title-before">{{list.L_title}}</text>
-        <icon class="iconfont {{list.L_icon}}"></icon>
+        <icon size="16" class="iconfont {{list.L_icon}}"></icon>
       </view>
       <view slot="body-slot" class="testbody">
         <block wx:for="{{list.L_items}}" wx:for-item="itemName" 
