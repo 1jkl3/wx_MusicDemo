@@ -10,7 +10,7 @@
           <text>{{item.s_right_title}}</text>
         </icon>
       </view>
-      <view slot="body-slot">
+      <view slot="body-slot" class="station-items">
         <block wx:for="{{item.s_items}}" wx:for-item="bodys" wx:key="index">
           <view class="station-body-context">
             <view class="context-img">

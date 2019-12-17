@@ -5,11 +5,14 @@
   justify-content: space-between;
   align-content: center;
   flex-wrap: wrap;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
 }
 
 .test-item {
   width: 33%;
   height: 400rpx;
+  background: white;
   /* padding: 16rpx 0; */
 }
 .tag-class{

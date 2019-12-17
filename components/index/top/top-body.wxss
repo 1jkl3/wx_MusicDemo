@@ -25,6 +25,7 @@
 .top-list{
   flex: 1;
   padding-top: 20rpx;
+  background: white;
   display: flex;
   flex-direction: column;
   align-content: center;

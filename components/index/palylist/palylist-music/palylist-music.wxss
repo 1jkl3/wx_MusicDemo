@@ -1,5 +1,6 @@
 /* components/palylist/palylist-music/palylist-music.wxss */
-.palylist-left{
+
+.palylist-left {
   font-size: 32rpx;
   border: 1px solid gray;
   width: 170rpx;
@@ -11,40 +12,52 @@
   line-height: 50rpx;
   margin-left: 20rpx;
 }
-.stance{
+
+.stance {
   width: 10%;
 }
-.palylist-right-title{
+
+.palylist-right-title {
   line-height: 80rpx;
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-size: 28rpx;
 }
-.palylist-body{
+
+.palylist-body {
+  margin-top: 10rpx;
   column-count: 2;
   width: 100%;
   column-gap: 10rpx;
 }
-.palylist-body-item{
+
+.palylist-body-item {
   break-inside: avoid;
   width: 100%;
   height: 440rpx;
+  margin-bottom: 20rpx;
+  background: white;
 }
-.palylist-body-img{
+
+.palylist-body-img {
   width: 100%;
   height: 80%;
-  position:relative;
+  position: relative;
 }
-.listen-num{
+
+.listen-num {
   position: absolute;
   display: inline-block;
   right: 0;
 }
-.palylist-body-title{
+
+.palylist-body-title {
+  width: 100%;
   height: 20%;
 }
-.palylist-body-title{
+
+.palylist-body-title text {
   font-size: 28rpx;
   word-wrap: break-word;
   overflow: hidden;
@@ -53,7 +66,8 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
 }
-.palylist-body-img image{
+
+.palylist-body-img image {
   width: 100%;
   height: 100%;
 }

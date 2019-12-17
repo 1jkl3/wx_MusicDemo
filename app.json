@@ -1,8 +1,9 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/detail/detail",
-    "pages/category/category"
+    "pages/find-music/find-music",
+    "pages/my-music/my-music",
+    "pages/user-info/user-info",
+    "pages/company/company"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -16,23 +17,32 @@
     "selectedColor": "#fff",
     "list": [
       {
-        "pagePath": "pages/index/index",
-        "iconPath": "/assets/img/index.png",
-        "selectedIconPath": "./assets/img/index2.png",
+        "pagePath": "pages/find-music/find-music",
+        "iconPath": "/assets/img/tabber-img/look-other.png",
+        "selectedIconPath": "/assets/img/tabber-img/look.png",
         "text": "发现音乐"
       },
       {
-        "pagePath": "pages/detail/detail",
+        "pagePath": "pages/my-music/my-music",
+        "iconPath": "/assets/img/tabber-img/mine-other.png",
+        "selectedIconPath": "/assets/img/tabber-img/mine.png",
         "text": "我的音乐"
       },
       {
-        "pagePath": "pages/category/category",
+        "pagePath": "pages/company/company",
+        "iconPath": "/assets/img/tabber-img/friend-other.png",
+        "selectedIconPath": "/assets/img/tabber-img/friend.png",
+        "text": "朋友"
+      },
+      {
+        "pagePath": "pages/user-info/user-info",
+        "iconPath": "/assets/img/tabber-img/music-other.png",
+        "selectedIconPath": "/assets/img/tabber-img/music.png",
         "text": "账号"
       }
     ]
   },
-  "usingComponents": {
-  },
+  "usingComponents": {},
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

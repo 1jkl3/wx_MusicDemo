@@ -1,4 +1,12 @@
 /* components/station/station-body/station-body.wxss */
+/* .tag-home{
+  height: 80rpx;
+  width: 100%;
+  margin-bottom: 10rpx;
+} */
+.station-items{
+  margin-top: 10rpx;
+}
 .left-title{
   height: 100%;
 }
@@ -15,10 +23,11 @@
 }
 .station-body-right>icon{
   line-height: 80rpx;
-  font-size: 36rpx;
+  font-size: 30rpx;
 }
 .station-body-context{
   display: flex;
+  margin-bottom: 20rpx;
   height: 180rpx;
 }
 .context-img{
@@ -32,9 +41,11 @@
 .context-title{
   flex: 1;
   height: 100%;
-  padding-top: 20rpx;
+  background: white;
 }
 .context-title-1{
+  display: inline-block;
+  padding-top: 20rpx;
   font-size: 30rpx;
 }
 .context-title-2{

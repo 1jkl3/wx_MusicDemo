@@ -5,6 +5,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: white;
+  margin-bottom: 20rpx;
 }
 .category-info{
   flex: 1;
