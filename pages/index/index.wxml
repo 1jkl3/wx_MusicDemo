@@ -1,7 +1,8 @@
 <!--pages/index/index.wxml-->
 <view>
   <!-- 搜索tab -->
-  <scroll-view scroll-y bind:scroll="handlescroll" class="scrollheight">
+  <scroll-view wx:if="{{scrollTop != null}}" 
+               scroll-y bind:scroll="handlescroll" class="scrollheight">
     <tab-bar tab-style="tab-style">
       <view slot="left">
         <icon class="iconfont icon-liebiao icon-class"></icon>
@@ -18,7 +19,9 @@
     <!-- 切换标签 -->
     <tab-nav id="tabout" bind:tabindex="tabbarindex" current="{{current}}" />
     <!-- 切换标题 -->
-    <swiper style="height:{{swiper_height+'px'}}" bindchange="handletopic" current="{{current}}">
+    <swiper wx:if="{{swiper_height != null}}" 
+            style="height:{{swiper_height+'px'}}"
+            bindchange="handletopic" current="{{current}}">
       <!-- 个性推荐 -->
       <swiper-item item-id="1">
         <view class="topic-view-0">
@@ -44,64 +47,15 @@
       <!-- 主播电台 -->
       <swiper-item item-id="3">
         <view class="topic-view-2">
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
-          <view>3</view>
+        <station-swiper stationImg="{{stationImg}}" />
+        <station-category />
+        <station-body />
         </view>
       </swiper-item>
       <!-- 排行榜 -->
       <swiper-item item-id="4">
         <view class="topic-view-3">
-          <view>4</view>
-          <view>4</view>
-          <view>4</view>
-          <view>4</view>
-          <view>4</view>
-          <view>4</view>
-          <view>4</view>
-          <view>4</view>
-          <view>4</view>
-          <view>4</view>
-          <view>4</view>
-          <view>4</view>
-          <view>4</view>
-          <view>4</view>
-          <view>4</view>
-          <view>4</view>
-          <view>4</view>
-          <view>4</view>
+          <top-body />
         </view>
       </swiper-item>
     </swiper>

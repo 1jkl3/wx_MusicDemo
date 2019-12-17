@@ -1,0 +1,10 @@
+/* components/station/station-swiper/station-swiper.wxss */
+.station-class {
+  width: 100%;
+  height: 100%;
+}
+
+.station-class image {
+  width: 100%;
+  height: 100%;
+}

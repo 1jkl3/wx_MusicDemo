@@ -1,0 +1,36 @@
+/* components/index/top/top-body.wxss */
+.top-left-tag{
+  height: 100%;
+  line-height: 80rpx;
+}
+.top-left-tag text{
+  font-size: 38rpx;
+  font-weight: 700;
+  border-left: 8rpx solid red;
+}
+.top-body-items{
+  display: flex;
+  height: 200rpx;
+  width: 100%;
+  margin: 15rpx 0;
+}
+.top-img{
+  height: 100%;
+  width: 30%;
+}
+.top-img image{
+  height: 100%;
+  width: 100%;
+}
+.top-list{
+  flex: 1;
+  padding-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.top-list>text{
+  flex: 1;
+  font-size: 32rpx;
+  padding-left: 20rpx;
+}

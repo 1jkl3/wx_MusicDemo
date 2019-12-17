@@ -1,0 +1,17 @@
+/* components/station/station-category/station-category.wxss */
+.category-body{
+  height: 120rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.category-info{
+  flex: 1;
+  text-align: center;
+}
+.category-icon{
+  transform: scale(1.5);
+  color:red;
+  padding-right: 10rpx;
+}

@@ -1,5 +1,5 @@
 <!--components/index/music-list/music-list.wxml-->
-<wxs src="../../../utils/utils.wxs" module="tools" />
+<wxs src="../../../../utils/utils.wxs" module="tools" />
 <view class="music-list-style">
     <music-detail>
       <view slot="tag-slot" class="tag-class">

@@ -1,12 +1,15 @@
 {
   "usingComponents": {
-    "swiper-img":"/components/index/swiper-img/swiper-img",
-    "tab-bar":"/components/index/tab-bar/tab-bar",
+    "swiper-img":"/components/index/recommed/swiper-img/swiper-img",
+    "tab-bar":"/components/index/recommed/tab-bar/tab-bar",
     "tab-nav": "/components/common/tab-nav/tab-nav",
-    "t-grid": "/components/index/t-grid/t-grid",
-    "music-list": "/components/index/music-list/music-list",
-    "palylist-header":"/components/palylist/palylist-header/palylist-header",
-    "palylist-music": "/components/palylist/palylist-music/palylist-music"
-
+    "t-grid": "/components/index/recommed/t-grid/t-grid",
+    "music-list": "/components/index/recommed/music-list/music-list",
+    "palylist-header":"/components/index/palylist/palylist-header/palylist-header",
+    "palylist-music": "/components/index/palylist/palylist-music/palylist-music",
+    "station-swiper": "/components/index/station/station-swiper/station-swiper",
+    "station-category":"/components/index/station/station-category/station-category",
+    "station-body": "/components/index/station/station-body/station-body",
+    "top-body": "/components/index/top/top-body"
   }
 }

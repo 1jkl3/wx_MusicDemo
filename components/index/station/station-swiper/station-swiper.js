@@ -1,10 +1,16 @@
-// components/tab-cotrl/tab-cotrl.js
+// components/station/station-swiper/station-swiper.js
 Component({
   /**
    * 组件的属性列表
    */
+  options: {
+    addGlobalClass: true
+  },
   properties: {
-
+    stationImg:{
+      type:Array,
+      value:[]
+    }
   },
 
   /**

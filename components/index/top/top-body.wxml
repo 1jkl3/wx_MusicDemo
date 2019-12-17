@@ -1,0 +1,23 @@
+<!--components/index/top/top-body.wxml-->
+<view>
+  <music-detail>
+    <view slot="tag-slot" class="top-left-tag">
+      <text>{{topData.t_left_title}}</text>
+    </view>
+    <view slot="body-slot">
+      <block wx:for="{{topData.t_items}}"  wx:key="index">
+        <view class="top-body-items">
+          <view class="top-img">
+            <image src="{{item.t_img}}"></image>
+          </view>
+          <view class="top-list">
+            <block wx:for="{{item.t_music_list_name}}" 
+            wx:for-item="list" wx:for-index="ind1" wx:key="ind1">
+              <text>{{ind1+1}}.{{list}}\n</text>
+            </block>
+          </view>
+        </view>
+      </block>
+    </view>
+  </music-detail>
+</view>

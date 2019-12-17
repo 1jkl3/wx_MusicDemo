@@ -1,0 +1,9 @@
+<!--components/station/station-category/station-category.wxml-->
+<view class="category-body">
+  <block wx:for="{{categorInfo}}" wx:key="index">
+    <view class="category-info" data-index="{{index}}">
+      <icon size="16" class="iconfont {{item.c_icon}} category-icon"></icon>
+      <text>  {{item.c_title}}</text>
+    </view>
+  </block>
+</view>

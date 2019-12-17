@@ -1,0 +1,8 @@
+<!--components/station/station-swiper/station-swiper.wxml-->
+<swiper indicator-dots autoplay circular indicator-color="#fff" indicator-active-color="#f54242">
+  <block wx:for="{{stationImg}}" wx:key="*this" >
+    <swiper-item item-id="{{index}}" class="station-class">
+      <image src="{{item}}" />
+    </swiper-item>
+  </block>
+</swiper>

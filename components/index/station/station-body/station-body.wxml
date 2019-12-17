@@ -1,0 +1,28 @@
+<!--components/station/station-body/station-body.wxml-->
+<view>
+  <block wx:for="{{stationBody}}" wx:key="index">
+    <music-detail>
+      <view slot="tag-slot" class="left-title">
+        <text>{{item.s_left_titlle}}</text>
+      </view>
+      <view slot="tagright-title" class="station-body-right">
+        <icon size="16" class="iconfont {{item.s_icon}}">
+          <text>{{item.s_right_title}}</text>
+        </icon>
+      </view>
+      <view slot="body-slot">
+        <block wx:for="{{item.s_items}}" wx:for-item="bodys" wx:key="index">
+          <view class="station-body-context">
+            <view class="context-img">
+              <image src="{{bodys.p_img}}"></image>
+            </view>
+            <view class="context-title">
+              <text class="context-title-1">{{bodys.p_title}}\n</text>
+              <text class="context-title-2">{{bodys.p_type}}\n</text>
+            </view>
+          </view>
+        </block>
+      </view>
+    </music-detail>
+  </block>
+</view>

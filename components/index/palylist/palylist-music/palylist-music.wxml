@@ -1,5 +1,5 @@
 <!--components/palylist/palylist-music/palylist-music.wxml-->
-<wxs src="../../../utils/utils.wxs" module="tools" />
+<wxs src="../../../../utils/utils.wxs" module="tools" />
 <view>
   <music-detail>
     <view slot="tag-slot" class="palylist-title">

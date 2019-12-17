@@ -134,7 +134,8 @@ Page({
           }
         ]
       }
-    ]
+    ],
+    stationImg: ["/assets/img/1.jpg","/assets/img/2.jpg"]
   },
   //点击切换主题
   tabbarindex(e){
@@ -166,7 +167,7 @@ Page({
   },
   //数据加载时动画
   dataload(){
-    wx.lod
+    // wx.lod
   },
   //监听页面滚动
   handlescroll(e){
@@ -204,13 +205,14 @@ Page({
   onReady: function () {
     //首次加载时获取swiper子组件高度
     var that = this
-    that.get_wxml(`.topic-view-${that.data.current}`,(res)=>{
-      // console.log(res)
+    that.get_wxml(`.topic-view-${that.data.current}`, (res) => {
+      console.log(res.height)
       that.setData({
         swiper_height: res.height
       });
     })
     that.get_wxml(`#tabout`, (res) => {
+      console.log(res.top)
       that.setData({
         scrollTop: res.top
       })
@@ -222,7 +224,6 @@ Page({
    */
   onShow: function () {
     var that = this
-    
   },
 
   /**
