@@ -1,14 +1,14 @@
 <!--components/index/music-list/music-list.wxml-->
 <wxs src="../../../../utils/utils.wxs" module="tools" />
 <view class="music-list-style">
+  <block wx:for="{{list}}" wx:key="index">
     <music-detail>
       <view slot="tag-slot" class="tag-class">
-        <text class="title-before">{{list.L_title}}</text>
-        <icon size="16" class="iconfont {{list.L_icon}}"></icon>
+        <text class="title-before">{{item.L_title}}</text>
+        <icon size="16" class="iconfont {{item.L_icon}}"></icon>
       </view>
       <view slot="body-slot" class="testbody">
-        <block wx:for="{{list.L_items}}" wx:for-item="itemName" 
-               wx:key="index2" data-index="{{index2}}" wx:for-index="index2">
+        <block wx:for="{{item.L_items}}" wx:for-item="itemName" wx:key="index2" data-index="{{index2}}" wx:for-index="index2">
           <view class="test-item" bind:tap="getupDetail" data-items="{{itemName}}">
             <view class="item-imgstr">
               <view class="ab-text">
@@ -25,4 +25,5 @@
         </block>
       </view>
     </music-detail>
+  </block>
 </view>

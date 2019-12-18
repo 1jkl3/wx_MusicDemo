@@ -1,0 +1,14 @@
+<!--components/music_me/music-local-list/music-local-list.wxml-->
+<view class="list-body">
+  <block wx:for="{{local_list}}" wx:key="index">
+    <view class="music-list">
+      <view class="music-icon">
+        <icon size="16" class="iconfont {{item.m_icon}}"></icon>
+      </view>
+      <view class="music-title">
+        <view class="music-listname">{{item.m_title}}</view>
+        <view class="music-num">{{item.m_num}}</view>
+      </view>
+    </view>
+  </block>
+</view>

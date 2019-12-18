@@ -8,7 +8,7 @@ Component({
   },
   properties: {
     list:{
-      type:Object,
+      type:Array,
       value:[],
       observer:function(a,b){
         // console.log(a)

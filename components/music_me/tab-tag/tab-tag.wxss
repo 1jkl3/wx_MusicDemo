@@ -1,0 +1,8 @@
+/* components/music_me/tab-tag/tab-tag.wxss */
+.tab-style{
+  background: red;
+  color: white;
+}
+.icon-class{
+  transform: scale(1.5);
+}

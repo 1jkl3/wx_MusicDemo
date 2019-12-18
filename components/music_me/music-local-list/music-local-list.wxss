@@ -1,0 +1,35 @@
+/* components/music_me/music-local-list/music-local-list.wxss */
+.list-body{
+  /* margin-bottom: 20rpx; */
+}
+.music-list{
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.music-icon{
+  width: 15%;
+  height: 100%;
+  text-align: center;
+}
+.music-icon>icon{
+  transform: scale(1.5);
+}
+.music-title{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.music-listname{
+  flex: 1;
+  padding-left: 16rpx;
+  font-weight: 600;
+}
+.music-num{
+  flex: 1;
+  text-align: right;
+  padding-right: 68rpx;
+  opacity: 0.5;
+}

@@ -1,31 +1,26 @@
-// components/palylist/palylist-music/palylist-music.js
+// components/music_me/music-local-list/music-local-list.js
 Component({
   /**
    * 组件的属性列表
    */
-  options: {
-    addGlobalClass: true
+  options:{
+    addGlobalClass:true
   },
   properties: {
-    palyData:{
-      type:Array,
-      value:[]
-    }
+    local_list:Array
   },
 
   /**
    * 组件的初始数据
    */
   data: {
-    
+
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
-    playlistPath(){
-      
-    }
+
   }
 })

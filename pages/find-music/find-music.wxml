@@ -1,27 +1,15 @@
 <!--pages/index/index.wxml-->
 <view>
   <!-- 搜索tab -->
-  <scroll-view wx:if="{{scrollTop != null}}" 
-               scroll-y bind:scroll="handlescroll" class="scrollheight">
-    <tab-bar tab-style="tab-style">
-      <view slot="left">
-        <icon class="iconfont icon-liebiao icon-class"></icon>
-      </view>
-      <view slot="center">
-        <input type="text" class="tab-input" placeholder="搜索"></input>
-      </view>
-      <view slot="right">
-        <icon class="iconfont icon-gengduo1 icon-class"></icon>
-      </view>
-    </tab-bar>
+  <scroll-view scroll-y="true" bind:scroll="handlescroll" class="scrollheight">
+    <!-- 头部搜索框 -->
+    <tab-tag />
     <!-- 吸顶标签 -->
     <tab-nav tab-nav-class="tab" wx:if="{{istabFixed}}" bind:tabindex="tabbarindex" current="{{current}}" />
     <!-- 切换标签 -->
     <tab-nav id="tabout" bind:tabindex="tabbarindex" current="{{current}}" />
     <!-- 切换标题 -->
-    <swiper wx:if="{{swiper_height != null}}" 
-            style="height:{{swiper_height+'px'}}"
-            bindchange="handletopic" current="{{current}}">
+    <swiper wx:if="{{swiper_height != null}}" style="height:{{swiper_height+'px'}}" bindchange="handletopic" current="{{current}}">
       <!-- 个性推荐 -->
       <swiper-item item-id="1">
         <view class="topic-view-0">
@@ -30,26 +18,22 @@
           <!-- 九宫格 -->
           <t-grid class="show-class" />
           <!-- 主题内容 -->
-          <block wx:for="{{musicList}}" wx:key="index">
-            <music-list list="{{item}}" />
-          </block>
+          <music-list list="{{musicList}}" />
         </view>
       </swiper-item>
       <!-- 歌单 -->
       <swiper-item item-id="2">
         <view class="topic-view-1">
           <palylist-header />
-          <block wx:for="{{palyList}}" wx:key="index">
-            <palylist-music palyData="{{item}}" />
-          </block>
+          <palylist-music palyData="{{palyList}}" />
         </view>
       </swiper-item>
       <!-- 主播电台 -->
       <swiper-item item-id="3">
         <view class="topic-view-2">
-        <station-swiper stationImg="{{stationImg}}" />
-        <station-category />
-        <station-body />
+          <station-swiper stationImg="{{stationImg}}" />
+          <station-category />
+          <station-body />
         </view>
       </swiper-item>
       <!-- 排行榜 -->

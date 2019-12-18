@@ -1,7 +1,7 @@
 {
   "usingComponents": {
     "swiper-img":"/components/index/recommed/swiper-img/swiper-img",
-    "tab-bar":"/components/index/recommed/tab-bar/tab-bar",
+    "tab-tag":"/components/index/recommed/tab-tag/tab-tag",
     "tab-nav": "/components/common/tab-nav/tab-nav",
     "t-grid": "/components/index/recommed/t-grid/t-grid",
     "music-list": "/components/index/recommed/music-list/music-list",
@@ -11,5 +11,6 @@
     "station-category":"/components/index/station/station-category/station-category",
     "station-body": "/components/index/station/station-body/station-body",
     "top-body": "/components/index/top/top-body"
-  }
+  },
+  "disableScroll": true
 }

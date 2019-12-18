@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "tab-tag": "/components/music_me/tab-tag/tab-tag",
+    "music-list": "/components/music_me/music-local-list/music-local-list"
+  },
+  "disableScroll": true
 }

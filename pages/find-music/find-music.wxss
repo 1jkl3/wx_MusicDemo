@@ -1,6 +1,7 @@
 /* pages/index/index.wxss */
 .scrollheight{
   height: 100vh;
+  /* height: 100%; */
 }
 .tab{
   position: fixed;
@@ -8,22 +9,6 @@
 	right: 0;
 	left: 0;
   z-index: 1;
-}
-.tab-style{
-  background: red;
-  box-shadow: 0px 2px 1px black;
-}
-.icon-class{
-  transform: scale(1.5,1.5);
-  color: white;
-}
-.tab-input{
-  margin: auto;
-  background: white;
-  width: 90%;
-  height: 30px;
-  text-align: center;
-  border-radius: 15px;
 }
 .show-class{
   border-bottom: 5px solid #F7F7F7;

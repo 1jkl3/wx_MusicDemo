@@ -1,0 +1,10 @@
+<!--components/music_me/tab-tag/tab-tag.wxml-->
+<view>
+  <tab-bar tab-style="tab-style">
+    <view slot="left">更多</view>
+    <view slot="center">我的音乐</view>
+    <view slot="right">
+      <icon size="16" class="iconfont icon-bangdan icon-class"></icon>
+    </view>
+  </tab-bar>
+</view>

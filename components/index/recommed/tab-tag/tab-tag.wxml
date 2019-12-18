@@ -1,0 +1,14 @@
+<!--components/index/recommed/tab-tag/tab-tag.wxml-->
+<view>
+  <tab-bar tab-style="tab-style">
+    <view slot="left">
+      <icon class="iconfont icon-liebiao icon-class"></icon>
+    </view>
+    <view slot="center">
+      <input type="text" class="tab-input" placeholder="搜索"></input>
+    </view>
+    <view slot="right">
+      <icon class="iconfont icon-gengduo1 icon-class"></icon>
+    </view>
+  </tab-bar>
+</view>
