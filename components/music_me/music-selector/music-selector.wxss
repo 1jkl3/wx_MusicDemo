@@ -1,0 +1,27 @@
+/* components/music_me/music-selector/music-selector.wxss */
+.select-body{
+  height: 80rpx;
+  line-height: 80rpx;
+  opacity: 0.58;
+}
+.active-hidden{
+  width: 100%;
+}
+.music-container{
+  height: 120rpx;
+  display: flex;
+  align-content: center;
+}
+.music-wapper-img{
+  height: 100%;
+  width: 20%;
+}
+.music-wapper-img>image{
+  width: 100%;
+  height: 100%;
+}
+.music-wapper-title{
+  height: 100%;
+  flex: 1;
+  font-size: 32rpx;
+}

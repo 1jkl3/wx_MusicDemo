@@ -1,7 +1,8 @@
 <!--pages/detail/detail.wxml-->
 <view>
   <scroll-view scroll-y bind:scroll="m_handle_scroll" class="music-class">
-    <tab-tag />
+    <tab-tag/>
     <music-list local_list="{{musiclist}}"/>
+    <music-selector selectorAll="{{storeSeletor}}" />
   </scroll-view>
 </view>

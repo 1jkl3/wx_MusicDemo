@@ -1,1 +1,4 @@
 /* pages/detail/detail.wxss */
+.music-class{
+  height: 100vh;
+}
