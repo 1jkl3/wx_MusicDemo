@@ -3,3 +3,11 @@
   height: 100vh;
   background: #F7F7F7;
 }
+.hiddle-class{
+  background: white;
+  position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+  z-index: 1;
+}

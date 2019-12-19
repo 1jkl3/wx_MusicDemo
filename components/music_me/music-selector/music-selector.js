@@ -92,7 +92,7 @@ Component({
     attached:function(){
       this.updataSize();
       // console.log("创建时")
-      console.log(this.data.size)
+      // console.log(this.data.size)
     }
   }
 })

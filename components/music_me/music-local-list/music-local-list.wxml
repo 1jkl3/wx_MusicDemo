@@ -11,7 +11,7 @@
       </view>
     </view>
   </block>
-  <block wx:for="{{test}}" wx:key="index">
+  <!-- <block wx:for="{{test}}" wx:key="index">
     <text>{{item}}</text>
-  </block>
+  </block> -->
 </view>

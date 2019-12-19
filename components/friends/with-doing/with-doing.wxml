@@ -1,5 +1,5 @@
 <!--components/friends/with-doing/with-doing.wxml-->
-<view class="company-with">
+<view class="company-with with-doing-class">
   <block wx:for="{{withList}}" wx:key="*this">
     <view catchtap="touchEvent" data-item="{{item}}" data-index="{{index}}">
       <icon size="16" class="iconfont {{item.w_icon}} icon-class"></icon>

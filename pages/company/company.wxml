@@ -1,9 +1,18 @@
 <!--pages/company/company.wxml-->
 <view>
   <scroll-view scroll-y bind:scroll="companyScroll" class="company-class">
+    <!-- 头部标签 -->
     <tab-tag bind:select-page="switchPages" />
-    <tab-tag bind:select-page="switchPages" />
-    <with-doing />
-    <dynamics-body />
+    <!-- 动态 -->
+    <view hidden="{{cutState != 0}}">
+      <!-- 标签动态 -->
+      <with-doing with-doing-class="hiddle-class" wx:if="{{istabFixed}}" />
+      <with-doing id="with-id" />
+      <!-- 动态主体 -->
+      <dynamics-body />
+    </view>
+    <view hidden="{{cutState != 1}}">
+    大便超人
+    </view>
   </scroll-view>
 </view>

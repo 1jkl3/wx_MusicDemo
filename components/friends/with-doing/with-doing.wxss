@@ -6,6 +6,7 @@
   line-height: 80rpx;
   text-align: center;
   box-shadow: 0rpx 1rpx 1rpx 1rpx #e6e6e6;
+  background: white;
 }
 .company-with>view{
   flex: 1;
