@@ -1,17 +1,15 @@
 <!--components/music_me/music-selector/music-selector.wxml-->
-<wxs src="../../../utils/utils.wxs" module="tools" />
+<!-- <wxs src="../../../utils/utils.wxs" module="tools" /> -->
 <view>
-  <block wx:for="{{selectorAll}}" wx:key="s_id">
+  <block wx:for="{{storeSeletor}}" wx:key="s_id">
     <view class="select-body" catch:tap="handle_zomm" data-index="{{index}}"
           data-list="{{item}}">
       <icon size="16" class="iconfont icon-down2"></icon>
       <text>{{item.s_title}}{{'('+size[index]+')'}}</text>
     </view>
-    <!-- {{isZoom == true?index == currentindex ? false:true:false}}
-     -->
     <view class="active-hidden" hidden="{{!item.s_show}}">
-      <block wx:for="{{item.s_list}}" wx:for-item="list" wx:key="p_id" wx:for-index="_index">
-        <!-- {{index == currentindex}} -->
+      <block wx:for="{{item.s_list}}" wx:for-item="list" wx:key="p_id" 
+             wx:for-index="_index">
         <view class="music-container">
           <view class="music-wapper-img">
             <image src="{{list.p_img}}"></image>

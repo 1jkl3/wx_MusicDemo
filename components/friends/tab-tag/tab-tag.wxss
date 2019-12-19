@@ -1,0 +1,33 @@
+/* components/friends/tab-tag/tab-tag.wxss */
+
+.bg-class {
+  background: red;
+  color: white;
+}
+
+.icon-class {
+  transform: scale(1.5);
+}
+
+.contrl-topic {
+  width: 60%;
+  height: 70rpx;
+  line-height: 70rpx;
+  margin: auto;
+  display: flex;
+  border-radius: 50rpx;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.contrl-topic>view {
+  flex: 1;
+  height: 100%;
+  border-radius: 50rpx;
+}
+
+.active-title {
+  border: 1px solid white;
+  background: white;
+  color: red;
+}

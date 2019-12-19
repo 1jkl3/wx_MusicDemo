@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "tab-bar": "/components/common/tab-bar/tab-bar"
+  }
+}

@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    test:[]
   },
 
   /**
@@ -19,7 +19,12 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    var arr = ["nihao", "nibuhao"]
+    setTimeout(()=>{
+      this.setData({
+        test:arr
+      })
+    },1000)
   },
 
   /**

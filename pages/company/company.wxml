@@ -1,2 +1,9 @@
 <!--pages/company/company.wxml-->
-<text>pages/company/company.wxml</text>
+<view>
+  <scroll-view scroll-y bind:scroll="companyScroll" class="company-class">
+    <tab-tag bind:select-page="switchPages" />
+    <tab-tag bind:select-page="switchPages" />
+    <with-doing />
+    <dynamics-body />
+  </scroll-view>
+</view>

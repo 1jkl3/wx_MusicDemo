@@ -1,0 +1,95 @@
+/* components/friends/dynamics-body/dynamics-body.wxss */
+.dynamics-body{
+  height: 640rpx;
+  width: 100%;
+  background: red;
+}
+.dynamics-info{
+  height: 15%;
+  background: orange;
+  display: flex;
+  align-items: center;
+}
+.dynamics-content{
+  height: 70%;
+  background: blue;
+}
+.dynamics-handle{
+  height: 15%;
+  display: flex;
+  align-items: center;
+}
+
+.info-profile,.info-attention{
+  width: 15%;
+  /* height: 100%; */
+}
+.info-attention{
+  align-self: center;
+}
+.info-name-msg{
+  width: 30%;
+  align-self: flex-end;
+  padding-left: 16rpx;
+}
+.info-username{
+  font-size: 28rpx;
+  margin-bottom: 6rpx;
+}
+.info-time{
+  font-size: 20rpx;
+}
+.info-title{
+  flex: 1;
+  align-self: center;
+}
+.info-btn{
+  font-size: 26rpx;
+  color: red;
+  text-align: center;
+  border-radius: 30rpx;
+  border: 1px solid gray;
+}
+
+.content-top{
+  height: 20%;
+  width: 80%;
+  margin: 0 auto;
+}
+.content-middle{
+  height: 70%;
+  width: 80%;
+  margin: 0 auto;
+}
+.content-middle>image{
+  width: 100%;
+  height: 100%;
+}
+.content-bottom{
+  height: 10%;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 26rpx;
+  display: flex;
+  align-items: center;
+}
+
+.handle-selector{
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.selector-item{
+  flex: 1;
+}
+.selector-text{
+  font-size: 24rpx;
+}
+.like-auto{
+  width: 35%;
+}
+.active{
+  color: red;
+}

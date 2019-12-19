@@ -1,0 +1,21 @@
+/* components/friends/with-doing/with-doing.wxss */
+.company-with{
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  box-shadow: 0rpx 1rpx 1rpx 1rpx #e6e6e6;
+}
+.company-with>view{
+  flex: 1;
+  width: 100%;
+}
+.company-with>text{
+  font-size: 32rpx;
+  font-weight: bolder;
+}
+.icon-class{
+  color: red;
+  padding-right: 10rpx;
+}

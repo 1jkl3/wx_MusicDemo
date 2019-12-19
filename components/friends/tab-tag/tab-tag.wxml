@@ -1,0 +1,21 @@
+<!--components/friends/tab-tag/tab-tag.wxml-->
+<view>
+  <tab-bar tab-style="bg-class">
+    <view slot="left">
+      <icon size="16" class="iconfont icon-wode icon-class"></icon>
+    </view>
+    <view slot="center">
+      <view class="contrl-topic">
+        <block wx:for="{{title}}" wx:key="*this">
+          <view class="{{currentindex == index ? 'active-title':''}}"
+                catchtap="handletitle" data-index="{{index}}">
+            <text>{{item}}</text>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view slot="right">
+      <icon size="16" class="iconfont icon-bangdan icon-class"></icon>
+    </view>
+  </tab-bar>
+</view>

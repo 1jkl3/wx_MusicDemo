@@ -1,0 +1,4 @@
+<!--components/user-info/test/test.wxml-->
+<block wx:for="{{list}}" wx:key="index">
+  <text>{{item}}</text>
+</block>

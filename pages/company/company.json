@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "tab-tag":"/components/friends/tab-tag/tab-tag",
+    "with-doing":"/components/friends/with-doing/with-doing",
+    "dynamics-body":"/components/friends/dynamics-body/dynamics-body"
+  },
+  "disableScroll": true
 }

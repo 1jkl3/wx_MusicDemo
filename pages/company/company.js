@@ -5,9 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
+  },
+  companyScroll(options){
 
   },
-
+  switchPages(e){
+    // console.log(e.detail.currentindex)
+  },
   /**
    * 生命周期函数--监听页面加载
    */
