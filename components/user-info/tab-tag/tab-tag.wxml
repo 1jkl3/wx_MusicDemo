@@ -1,0 +1,10 @@
+<!--components/user-info/tab-tag/tab-tag.wxml-->
+<view>
+  <tab-bar tab-style="tab-style">
+    <view slot="left"></view>
+    <view slot="center">账号</view>
+    <view slot="right">
+      <icon size="16" class="iconfont icon-bangdan icon-class"></icon>
+    </view>
+  </tab-bar>
+</view>

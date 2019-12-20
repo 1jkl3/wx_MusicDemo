@@ -13,7 +13,11 @@
           <text>{{item.d_title}}</text>
         </view>
         <view class="info-attention">
-          <view class="info-btn">+关注</view>
+        <button size="mini" bind:tap="handlebtn"
+                data-index="{{index}}"
+                class="info-btn {{item.d_btnAcitve?'btn-active':''}}" >
+        {{item.d_attention}}
+        </button>
         </view>
       </view>
       <!-- 中部 -->
@@ -37,8 +41,7 @@
                   data-item="{{lists}}" data-index="{{_index}}"
                   data-parent-index="{{index}}">
               <view class="like-auto">
-                <icon size="13" 
-                      class="iconfont {{lists.h_icon}} {{isActive && _index == currentindex && index == parentIndex?'active':''}}"></icon>
+                <icon size="13" class="iconfont {{lists.h_icon}} {{item.isActive && _index == currentindex?'active':''}} "></icon>
                 <text class="selector-text">{{lists.h_num}}</text>
               </view>
             </view>

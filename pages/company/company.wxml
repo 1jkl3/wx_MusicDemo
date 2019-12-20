@@ -12,7 +12,8 @@
       <dynamics-body />
     </view>
     <view hidden="{{cutState != 1}}">
-    大便超人
+      <head-box />
+      <nearby-body />
     </view>
   </scroll-view>
 </view>

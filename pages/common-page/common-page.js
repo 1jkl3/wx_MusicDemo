@@ -1,11 +1,11 @@
-// pages/category/category.js
+// pages/common-page/common-page.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    test:[]
+
   },
 
   /**
@@ -19,25 +19,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    var arr = [
-      {
-        icon:"icon-bangdan",
-        text:"dsafaf"
-      },
-      {
-        icon: "icon-bangdan",
-        text: "dsafaf"
-      },
-      {
-        icon: "icon-bangdan",
-        text: "dsafaf"
-      }
-    ]
-    setTimeout(()=>{
-      this.setData({
-        test:arr
-      })
-    },1000)
+
   },
 
   /**

@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "test":"/components/user-info/test/test"
+    "test":"/components/user-info/test/test",
+    "tab-tag":"/components/user-info/tab-tag/tab-tag",
+    "nom-info":"/components/user-info/nom-info/nom-info"
   }
 }

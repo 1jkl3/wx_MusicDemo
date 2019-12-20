@@ -1,0 +1,35 @@
+<!--components/user-info/nom-info/nom-info.wxml-->
+<view class="nom-info">
+  <view class="info-user">
+    <view class="user-img">
+      <image src="/assets/img/1.jpg"></image>
+    </view>
+    <view class="user-msg">
+      <view>肥牛饭</view>
+      <view>
+        <button size="mini" bind:tap="handlemsg" class="user-btn">我的</button>
+      </view>
+    </view>
+    <view class="user-sign">
+    <button size="mini" bind:tap="handlesign" class="sign-btn">签到</button>
+    </view>
+  </view>
+  <view class="info-state">
+    <view>
+      <text>dasd\n</text>
+      <text>dasd\n</text>
+    </view>
+    <view>
+      <text>dasd\n</text>
+      <text>dasd\n</text>
+    </view>
+    <view>
+      <text>dasd\n</text>
+      <text>dasd\n</text>
+    </view>
+    <view>
+      <text>我的资料\n</text>
+      <text>dasd\n</text>
+    </view>
+  </view>
+</view>

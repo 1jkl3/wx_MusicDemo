@@ -1,0 +1,63 @@
+/* components/user-info/nom-info/nom-info.wxss */
+.nom-info{
+  height: 400rpx;
+  margin-top: 20rpx;
+}
+.info-user{
+  height: 70%;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  box-shadow: 0rpx 1rpx 1rpx 1rpx #e6e6e6;
+}
+.info-state{
+  height: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.user-img{
+  width: 30%;
+  height: 80%;
+  align-self: center;
+}
+.user-img>image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.user-msg{
+  width: 50%;
+  height: 60%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+.user-msg>view{
+  padding-left: 20rpx;
+}
+.user-sign{
+  align-self: center;
+  width: 20%;
+}
+.user-btn{
+  background: transparent;
+  font-size: 26rpx !important;
+  color: gray;
+  font-weight: 600;
+  border-radius: 30rpx;
+  border: 1px solid #e6e6e6;
+}
+.sign-btn{
+  font-size: 26rpx !important;
+  color: gray;
+  font-weight: 600;
+  border-radius: 30rpx;
+  border: 1px solid #e6e6e6;
+}
+
+.info-state>view{
+  flex: 1;
+  text-align: center;
+}

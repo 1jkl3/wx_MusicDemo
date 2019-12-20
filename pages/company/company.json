@@ -2,7 +2,9 @@
   "usingComponents": {
     "tab-tag":"/components/friends/tab-tag/tab-tag",
     "with-doing":"/components/friends/with-doing/with-doing",
-    "dynamics-body":"/components/friends/dynamics-body/dynamics-body"
+    "dynamics-body":"/components/friends/dynamics-body/dynamics-body",
+    "head-box":"/components/friends/nearby/head-box/head-box",
+    "nearby-body":"/components/friends/nearby/nearby-body/nearby-body"
   },
   "disableScroll": true
 }

@@ -1,1 +1,20 @@
 /* components/friends/nearby/head-box/head-box.wxss */
+.head-img-class{
+  height: 350rpx;
+  width: 95%;
+  margin: auto;
+  margin-top: 20rpx;
+  position: relative;
+}
+.head-img-class>image{
+  height: 100%;
+  width: 100%;
+}
+.head-view{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  background: rgb(0, 0, 0,0.5);
+}

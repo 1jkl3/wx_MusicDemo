@@ -1,4 +1,9 @@
 <!--components/friends/nearby/head-box/head-box.wxml-->
 <view>
-
+  <block wx:for="{{headList}}" wx:key="index">
+    <view class="head-img-class">
+      <image src="{{item.h_img}}"></image>
+      <view class="head-view">{{item.h_text}}</view>
+    </view>
+  </block>
 </view>

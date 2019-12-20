@@ -3,6 +3,9 @@ Component({
   /**
    * 组件的属性列表
    */
+  options: {
+    addGlobalClass: true
+  },
   properties: {
     list:{
       type:Array,
@@ -21,6 +24,13 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    testData(){
+      wx.navigateTo({
+        url: '/pages/user-info/test-page/test-page',
+        success:function(data){
+          console.log(data)
+        }
+      })
+    }
   }
 })
