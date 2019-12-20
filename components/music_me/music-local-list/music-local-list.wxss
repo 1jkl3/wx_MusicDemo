@@ -1,4 +1,7 @@
 /* components/music_me/music-local-list/music-local-list.wxss */
+.music-local-list{
+  background: white;
+}
 .music-list{
   height: 80rpx;
   line-height: 80rpx;

@@ -5,7 +5,7 @@
   opacity: 0.58;
 }
 .active-hidden{
-  width: 100%;
+  background: white;
 }
 .music-container{
   height: 120rpx;
@@ -24,4 +24,9 @@
   height: 100%;
   flex: 1;
   font-size: 32rpx;
+}
+.icon-class{
+  transform: rotate(-90deg);
+}
+.icon-def{
 }

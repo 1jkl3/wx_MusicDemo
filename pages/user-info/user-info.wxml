@@ -2,5 +2,6 @@
 <scroll-view scroll-y >
   <tab-tag />
   <nom-info></nom-info>
+  <function-list></function-list>
 </scroll-view>
 <!-- <test list="{{test}}" /> -->

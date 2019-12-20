@@ -2,18 +2,19 @@
 
 .nearby-overall {
   margin-top: 20rpx;
+  background: white;
 }
 
 .nearby-body-class {
   height: 180rpx;
-  border-bottom: 10rpx solid #e6e6e6;
+  border-bottom: 10rpx solid #F7F7F7;
 }
 
 .nearby-user {
   height: 75%;
   display: flex;
   align-items: center;
-  box-shadow: 0rpx 1rpx 1rpx 1rpx #e6e6e6;
+  box-shadow: 0rpx 1rpx 1rpx 1rpx #F7F7F7;
 }
 
 .user-photo {

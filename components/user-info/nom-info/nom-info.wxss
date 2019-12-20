@@ -1,7 +1,7 @@
 /* components/user-info/nom-info/nom-info.wxss */
 .nom-info{
   height: 400rpx;
-  margin-top: 20rpx;
+  background: white;
 }
 .info-user{
   height: 70%;
@@ -9,7 +9,7 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  box-shadow: 0rpx 1rpx 1rpx 1rpx #e6e6e6;
+  border-bottom: 1rpx solid #e6e6e6;
 }
 .info-state{
   height: 30%;
@@ -51,13 +51,18 @@
 }
 .sign-btn{
   font-size: 26rpx !important;
-  color: gray;
+  color: white;
+  background: red;
   font-weight: 600;
   border-radius: 30rpx;
   border: 1px solid #e6e6e6;
 }
-
+.sign-active{
+  background: white;
+  color:gray;
+}
 .info-state>view{
   flex: 1;
+  align-self: center;
   text-align: center;
 }

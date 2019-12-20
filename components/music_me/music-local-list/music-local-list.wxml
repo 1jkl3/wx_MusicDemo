@@ -1,5 +1,5 @@
 <!--components/music_me/music-local-list/music-local-list.wxml-->
-<view>
+<view class="music-local-list">
   <block wx:for="{{musiclist}}" wx:key="index">
     <view class="music-list">
       <view class="music-icon">

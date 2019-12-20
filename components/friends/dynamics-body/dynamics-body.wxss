@@ -2,6 +2,8 @@
 .dynamics-body{
   height: 640rpx;
   width: 100%;
+  background: white;
+  border-bottom: 20rpx solid #e6e6e6;
 }
 .dynamics-info{
   height: 15%;

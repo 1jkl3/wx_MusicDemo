@@ -2,34 +2,28 @@
 <view class="nom-info">
   <view class="info-user">
     <view class="user-img">
-      <image src="/assets/img/1.jpg"></image>
+      <image src="{{nomInfo.n_img}}"></image>
     </view>
     <view class="user-msg">
-      <view>肥牛饭</view>
+      <view>{{nomInfo.n_name}}</view>
       <view>
-        <button size="mini" bind:tap="handlemsg" class="user-btn">我的</button>
+        <button size="mini" bind:tap="handlemsg" class="user-btn">{{nomInfo.n_tag}}</button>
       </view>
     </view>
     <view class="user-sign">
-    <button size="mini" bind:tap="handlesign" class="sign-btn">签到</button>
+      <button size="mini" bind:tap="handlesign"
+       class="sign-btn {{isSign?'sign-active':''}}">{{nomInfo.n_sign}}</button>
     </view>
   </view>
   <view class="info-state">
-    <view>
-      <text>dasd\n</text>
-      <text>dasd\n</text>
-    </view>
-    <view>
-      <text>dasd\n</text>
-      <text>dasd\n</text>
-    </view>
-    <view>
-      <text>dasd\n</text>
-      <text>dasd\n</text>
-    </view>
+    <block wx:for="{{nomInfo.n_state}}" wx:key="s_id">
+      <view>
+        <text>{{item.s_name}}\n</text>
+        <text>{{item.s_num}}\n</text>
+      </view>
+    </block>
     <view>
       <text>我的资料\n</text>
-      <text>dasd\n</text>
     </view>
   </view>
 </view>

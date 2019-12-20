@@ -14,7 +14,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    isZoom: false,
+    isRotate: false,
     currentindex: 0,
     size: [],
     storeSeletor: [
