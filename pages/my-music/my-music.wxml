@@ -4,7 +4,7 @@
     <tab-tag />
     <!--  localList="{{musiclist}}" -->
     <!-- selectorAll="{{storeSeletor}}" -->
-    <music-list test="{{test}}" />
-    <music-selector />
+    <music-list musiclist="{{music_list}}" />
+    <music-selector storeSeletor="{{storeSeletor}}" />
   </scroll-view>
 </view>

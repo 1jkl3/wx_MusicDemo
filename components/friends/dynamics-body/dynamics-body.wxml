@@ -14,8 +14,8 @@
         </view>
         <view class="info-attention">
         <button size="mini" bind:tap="handlebtn"
-                data-index="{{index}}"
-                class="info-btn {{item.d_btnAcitve?'btn-active':''}}" >
+        data-index="{{index}}"
+        class="info-btn {{item.d_btnAcitve?'btn-active':''}}" >
         {{item.d_attention}}
         </button>
         </view>

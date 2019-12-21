@@ -1,4 +1,6 @@
 /* components/user-info/function-list/function-list.wxss */
+@import "/assets/icon/iconfont.wxss";
+
 .functiom-list{
   background: white;
   margin-top: 20rpx;
@@ -16,7 +18,10 @@
   width: 10%;
   text-align: center;
 }
-.list-icon>icon{
+/* .list-icon>icon{
+  font-size: 40rpx;
+} */
+.icon-class{
   font-size: 40rpx;
 }
 .list-msg{
@@ -29,15 +34,15 @@
   display: flex;
 }
 .list-item>text,.list-item>switch{
+  align-self: center;
   flex: 1;
+  font-size: 30rpx;
 }
 .list-item>text{
   opacity: 0.68;
-  font-size: 30rpx;
-  padding-top: 10rpx;
 }
-.list-item>icon{
+
+.list-item-icon{
   flex: 1;
   text-align: right;
-  font-size: 40rpx;
 }

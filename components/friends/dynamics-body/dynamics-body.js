@@ -79,7 +79,6 @@ Component({
     ],
     currentindex: 0,
     parentIndex: 0,
-    btnindex:0
   },
 
   /**
@@ -119,8 +118,7 @@ Component({
       if (dynamicsList[btnindex].d_btnAcitve){
         dynamicsList[btnindex].d_attention = "已关注"
         this.setData({
-          dynamicsList,
-          btnindex
+          dynamicsList
         })
         wx.showToast({
           title: '关注',
@@ -130,8 +128,7 @@ Component({
       }else{
         dynamicsList[btnindex].d_attention = "+关注"
         this.setData({
-          dynamicsList,
-          btnindex
+          dynamicsList
         })
         wx.showToast({
           title: '取消',

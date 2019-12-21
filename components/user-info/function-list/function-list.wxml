@@ -1,10 +1,11 @@
 <!--components/user-info/function-list/function-list.wxml-->
+<!-- 下半部分 -->
 <view class="functiom-list">
   <block wx:for="{{functionList}}" wx:key="f_id">
     <view class="list-body" catchtap="handleProperty"
           data-index="{{index}}" data-item="{{item}}">
       <view class="list-icon">
-        <icon class="iconfont {{item.f_left_icon}}"></icon>
+        <text class="iconfont icon-class {{item.f_left_icon}}"></text>
       </view>
       <view class="list-msg">
         <text>{{item.f_msg}}</text>
@@ -13,7 +14,7 @@
         <text wx:if="{{item.f_right_text != null}}">{{item.f_right_text[0]}}</text>
         <switch checked="{{item.f_switch}}" wx:if="{{item.f_switch != null}}"
         bindchange="handleSwitch" data-index="{{index}}"></switch>
-        <icon class="iconfont {{item.f_right_icon}}"></icon>
+        <text type="success" class="iconfont list-item-icon {{item.f_right_icon}}"></text>
       </view>
     </view>
   </block>

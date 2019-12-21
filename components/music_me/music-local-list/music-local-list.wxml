@@ -3,7 +3,7 @@
   <block wx:for="{{musiclist}}" wx:key="index">
     <view class="music-list">
       <view class="music-icon">
-        <icon size="16" class="iconfont {{item.m_icon}}"></icon>
+        <text class="iconfont {{item.m_icon}}"></text>
       </view>
       <view class="music-title">
         <view class="music-listname">{{item.m_title}}</view>

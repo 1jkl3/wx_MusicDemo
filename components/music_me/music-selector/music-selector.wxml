@@ -4,7 +4,7 @@
   <block wx:for="{{storeSeletor}}" wx:key="s_id">
     <view class="select-body" catch:tap="handle_zomm" data-index="{{index}}"
           data-list="{{item}}">
-      <icon size="16" class="iconfont icon-down2 {{item.s_show ? '':'icon-class'}}"></icon>
+      <text class="iconfont icon-down2 {{item.s_show ? '':'icon-class'}}"></text>
       <text>{{item.s_title}}{{'('+size[index]+')'}}</text>
     </view>
     <view class="active-hidden" hidden="{{!item.s_show}}">

@@ -1,7 +1,6 @@
 <!--pages/category/category.wxml-->
-<scroll-view scroll-y >
+<scroll-view scroll-y class="user-info">
   <tab-tag />
   <nom-info></nom-info>
-  <function-list></function-list>
+  <function-list functionList="{{list}}"></function-list>
 </scroll-view>
-<!-- <test list="{{test}}" /> -->

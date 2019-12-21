@@ -1,7 +1,0 @@
-<!--components/user-info/test/test.wxml-->
-<block wx:for="{{list}}" wx:key="index">
-  <text>{{item.text}}</text>
-  <icon class="iconfont {{item.icon}}"></icon>
-</block>
-
-<button catchtap="testData">测试动态数据页</button>

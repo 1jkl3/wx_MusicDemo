@@ -1,6 +1,10 @@
 /**app.wxss**/
 @import "/assets/icon/iconfont.wxss";
+:root{
+  --global-bg:#F7F7F7;
+  --global-height:100vh;
+}
 page{
-  background: #F7F7F7;
-  height: 100vh;
+  background: var(--global-bg);
+  height: var(--global-height);
 }

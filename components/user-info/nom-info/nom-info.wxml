@@ -1,4 +1,5 @@
 <!--components/user-info/nom-info/nom-info.wxml-->
+<!-- 上半部分 -->
 <view class="nom-info">
   <view class="info-user">
     <view class="user-img">

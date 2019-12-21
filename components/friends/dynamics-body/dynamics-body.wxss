@@ -46,7 +46,8 @@
 }
 .info-btn{
   font-size: 26rpx !important;
-  color: red;
+  color: white;
+  background: #3474eb;
   font-weight: 600;
   border-radius: 30rpx;
   border: 1px solid gray;
@@ -95,6 +96,6 @@
   color: red;
 }
 .btn-active{
-  color: white !important;
-  background: red !important;
+  color: gray !important;
+  background: white !important;
 }

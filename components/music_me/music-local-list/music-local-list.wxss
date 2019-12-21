@@ -14,8 +14,9 @@
   height: 100%;
   text-align: center;
 }
-.music-icon>icon{
-  transform: scale(1.5);
+.music-icon>text{
+  font-size: 36rpx;
+  /* transform: scale(1.5); */
 }
 .music-title{
   flex: 1;

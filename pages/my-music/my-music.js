@@ -4,13 +4,24 @@ Page({
   /**
    * 页面的初始数据
    */
+  options: {
+    addGlobalClass: true
+  },
   data: {
-    musiclist:[
+    music_list:[],
+    storeSeletor:[],
+    test: ["nihao", "nibuhao"]
+  },
+  m_handle_scroll(e){
+    // console.log(e)
+  },
+  get_music_list:function(){
+    var music_list = [
       {
-        m_id:0,
-        m_title:"本地音乐",
-        m_num:"123",
-        m_icon:"icon-yinle-copy"
+        m_id: 0,
+        m_title: "本地音乐",
+        m_num: "123",
+        m_icon: "icon-yinle-copy"
       },
       {
         m_id: 1,
@@ -30,18 +41,25 @@ Page({
         m_num: "123",
         m_icon: "icon-yinle-copy"
       }
-    ],
-    storeSeletor:[
+    ]
+    setTimeout(()=>{
+      this.setData({
+        music_list
+      })
+    },1000)
+  },
+  get_store_seletor:function(){
+    var storeSeletor = [
       {
-        s_id:0,
-        s_title:"我创建的歌单",
-        s_show:true,
-        s_list:[
+        s_id: 0,
+        s_title: "我创建的歌单",
+        s_show: true,
+        s_list: [
           {
             p_id: 0,
             p_img: "/assets/img/profile-photo/music-like.png",
-            p_title:"我喜欢的音乐",
-            p_num:3
+            p_title: "我喜欢的音乐",
+            p_num: 3
           },
           {
             p_id: 1,
@@ -76,70 +94,17 @@ Page({
           }
         ]
       }
-    ],
-    test: ["nihao", "nibuhao"]
+    ]
+    setTimeout(() => {
+      this.setData({
+        storeSeletor
+      })
+    }, 1000)
   },
-  m_handle_scroll(e){
-    // console.log(e)
-  },
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
   onReady: function () {
-    // var arr = ["nihao", "nibuhao"]
-    // setTimeout(() => {
-    //   this.setData({
-    //     test: arr
-    //   })
-    // }, 1000)
+    wx.nextTick(()=>{
+      this.get_music_list();
+      this.get_store_seletor();
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
 })

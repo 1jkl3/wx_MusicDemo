@@ -1,1 +1,5 @@
 /* pages/category/category.wxss */
+.user-info{
+  height: 100vh;
+  background: #F7F7F7;
+}
