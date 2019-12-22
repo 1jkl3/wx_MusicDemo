@@ -7,78 +7,18 @@ Component({
     addGlobalClass: true
   },
   properties: {
-
+    dynamicsList:{
+      type:Array,
+      value:[]
+    }
   },
 
   /**
    * 组件的初始数据
    */
   data: {
-    dynamicsList: [{
-        d_id: 0,
-        d_profile: "",
-        isActive: false,
-        d_name: "爱吃西红柿",
-        d_time: "12-2",
-        d_title: "标题党",
-        d_attention:"+关注",
-        d_btnAcitve:false,
-        d_bodys: {
-          b_title: "是你佛奥佛按时发红奥是佛我哈覅发放放假啊司法局按设计费",
-          b_media: "",
-          b_depict: "欧帕斯发盘发破"
-        },
-        d_handles: [{
-            h_id: 0,
-            h_icon: "icon-dianzan",
-            h_num: 32
-          },
-          {
-            h_id: 1,
-            h_icon: "icon-pinglun1",
-            h_num: 32
-          },
-          {
-            h_id: 2,
-            h_icon: "icon-Artboard",
-            h_num: 32
-          }
-        ]
-      },
-      {
-        d_id: 1,
-        d_profile: "",
-        isActive: false,
-        d_name: "不爱吃西红柿",
-        d_time: "12-2",
-        d_title: "标题党",
-        d_attention: "+关注",
-        d_btnAcitve: false,
-        d_bodys: {
-          b_title: "是你佛奥佛按时发红奥是佛我哈覅发放放假啊司法局按设计费",
-          b_media: "",
-          b_depict: "欧帕斯发盘发破"
-        },
-        d_handles: [{
-            h_id: 0,
-            h_icon: "icon-dianzan",
-            h_num: 32
-          },
-          {
-            h_id: 1,
-            h_icon: "icon-pinglun1",
-            h_num: 32
-          },
-          {
-            h_id: 2,
-            h_icon: "icon-Artboard",
-            h_num: 32
-          }
-        ]
-      }
-    ],
     currentindex: 0,
-    parentIndex: 0,
+    parentIndex: 0
   },
 
   /**

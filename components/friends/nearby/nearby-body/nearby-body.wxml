@@ -2,7 +2,7 @@
 <view class="nearby-overall">
   <block wx:for="{{bodyList}}" wx:key="index">
     <view class="nearby-body-class">
-    <!-- 主体上部 -->
+      <!-- 主体上部 -->
       <view class="nearby-user">
         <view class="user-photo">
           <image src="{{item.b_img}}"></image>
@@ -12,12 +12,11 @@
           <view>{{item.b_title}}</view>
         </view>
         <view class="user-map">
-          <icon size="12" class="iconfont {{item.b_icon}} icon-class">
-            <text>{{item.b_distance}}</text>
-          </icon>
+          <text class="iconfont {{item.b_icon}} icon-class"></text>
+          <text>{{item.b_distance}}</text>
         </view>
       </view>
-    <!-- 主体下部 -->
+      <!-- 主体下部 -->
       <view class="nearby-music">
         <text class="music-left">{{item.b_music_name}}</text>
         <text class="music-right">{{item.b_time}}</text>

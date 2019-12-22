@@ -9,11 +9,11 @@
       <with-doing with-doing-class="hiddle-class" wx:if="{{istabFixed}}" />
       <with-doing id="with-id" />
       <!-- 动态主体 -->
-      <dynamics-body />
+      <dynamics-body dynamicsList="{{dynamicsList}}" />
     </view>
     <view hidden="{{cutState != 1}}">
-      <head-box />
-      <nearby-body />
+      <head-box headList="{{nearbyDetail[0]}}" />
+      <nearby-body bodyList="{{nearbyDetail[1]}}" />
     </view>
   </scroll-view>
 </view>

@@ -5,14 +5,21 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    index:0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var than = this;
+    const eventChannel = this.getOpenerEventChannel();
+    eventChannel.on("getindex",function(res){
+      console.log(res)
+      than.setData({
+        index:res.index
+      })
+    })
   },
 
   /**
@@ -40,7 +47,14 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+    const eventChannel = this.getOpenerEventChannel();
+    wx.navigateBack({
+      delta:1,
+      success:function(){
+        eventChannel.emit("some",{data:1})
+        console.log("返回")
+      }
+    })
   },
 
   /**

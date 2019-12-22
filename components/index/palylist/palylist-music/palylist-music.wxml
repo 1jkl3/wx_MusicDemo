@@ -23,9 +23,9 @@
           <view class="palylist-body-item">
             <view class="palylist-body-img">
               <view class="listen-num">
-                <icon class="iconfont icon-erji">
+                <text class="iconfont icon-erji">
                   <text>{{tools.handleData(_item.t_num,'万')}}</text>
-                </icon>
+                </text>
               </view>
               <image src="{{_item.t_img}}"></image>
             </view>

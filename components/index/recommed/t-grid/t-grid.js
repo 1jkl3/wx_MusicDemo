@@ -36,7 +36,27 @@ Component({
   methods: {
     //切换到详情页面
     toaboutpath(e){
-      console.log(e)
+      var currentindex = e.currentTarget.dataset.index
+      if (currentindex === 0){
+
+      } else if (currentindex === 1){
+        wx.navigateTo({
+          url: '/pages/song-detail/song-detail?index=1',
+          events:{
+            getindex:function(res){
+              // console.log(res)
+            }
+          },
+          success:function(res){
+            res.eventChannel.emit("getindex", { index: currentindex})
+            res.eventChannel.on("some", function (res) {
+              console.log(res)
+            })
+          }
+        })
+      }else{
+
+      }
     }
   }
 })

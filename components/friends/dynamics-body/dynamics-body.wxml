@@ -26,7 +26,7 @@
           <text>{{item.d_bodys.b_title}}</text>
         </view>
         <view class="content-middle">
-          <image></image>
+          <image src="{{item.d_bodys.b_media}}"></image>
         </view>
         <view class="content-bottom">
           <text>{{item.d_bodys.b_depict}}</text>
@@ -41,7 +41,7 @@
                   data-item="{{lists}}" data-index="{{_index}}"
                   data-parent-index="{{index}}">
               <view class="like-auto">
-                <icon size="13" class="iconfont {{lists.h_icon}} {{item.isActive && _index == currentindex?'active':''}} "></icon>
+                <text size="13" class="iconfont {{lists.h_icon}} {{item.isActive && _index == currentindex?'active':''}} "></text>
                 <text class="selector-text">{{lists.h_num}}</text>
               </view>
             </view>
