@@ -1,0 +1,19 @@
+<!--pages/find-music/search-page/components/search-singer/index.wxml-->
+<view class="search-hot">
+  <view class="category" hover-class="category-hover">
+    <text class="iconfont icon-wode"></text>
+    <text>  歌手分类  </text>
+    <text class="iconfont icon-changyongtubiao-xianxingdaochu-zhuanqu-"></text>
+  </view>
+  <view class="hot-door">
+    <view class="door-tag">
+      <text>热门搜索</text>
+    </view>
+    <view class="door-song">
+      <block wx:for="{{doors}}" wx:key="*this">
+        <button>{{item.d_name}}</button>
+      </block>
+    </view>
+  </view>
+  <view class="record"></view>
+</view>

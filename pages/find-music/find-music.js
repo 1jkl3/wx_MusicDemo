@@ -20,8 +20,7 @@ Page({
     hotSongList: {},
     timer: null,
     isTop: false,
-    //异步测试
-    testdata: [],
+    search_data:""
   },
   //点击切换主题
   tabbarindex(e) {
@@ -363,6 +362,9 @@ Page({
     }).catch(err => {
       console.log(err)
     })
+  },
+  onLoad:function(){
+    
   },
   onReady: function() {
     wx.nextTick(()=>{

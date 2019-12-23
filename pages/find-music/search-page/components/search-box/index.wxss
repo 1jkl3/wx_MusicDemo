@@ -1,0 +1,29 @@
+/* pages/find-music/search-page/components/search-box/index.wxss */
+.search-box{
+  height: 88rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: red;
+}
+.search-input{
+  width: 82%;
+  height: 80%;
+  padding-left: 20rpx;
+}
+.search-cancel{
+  flex: 1;
+}
+.search-cancel>text{
+  color: white;
+}
+.input-any{
+  display: inline-block;
+  border-radius: 30rpx;
+  width: 95%;
+  height: 100%;
+  text-align: center;
+  color: black;
+  background: white;
+}

@@ -1,6 +1,6 @@
 /* components/index/recommed/tab-tag/tab-tag.wxss */
 .tab-style{
-  background: red;
+  background: #f50707;
 }
 .tab-input{
   margin: auto;

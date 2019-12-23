@@ -7,14 +7,16 @@ Component({
     addGlobalClass:true
   },
   properties: {
-
+    inputData: {
+      type: String,
+      value: ""
+    }
   },
 
   /**
    * 组件的初始数据
    */
   data: {
-
   },
 
   /**
@@ -22,8 +24,18 @@ Component({
    */
   methods: {
     goTosearch(){
+      var than = this;
       wx.navigateTo({
-        url: '',
+        url: '/pages/find-music/search-page/search-page',
+        events:{
+          input_data:function(){
+
+          }
+        },
+        success:function(res){
+          let inputData = than.data.inputData;
+          res.eventChannel.emit("input_data", { value: inputData});
+        }
       })
     }
   }

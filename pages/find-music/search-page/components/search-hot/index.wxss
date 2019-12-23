@@ -1,0 +1,17 @@
+/* pages/find-music/search-page/components/search-singer/index.wxss */
+.category{
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  box-shadow: 0 1rpx 1rpx 1rpx #F7F7F7;
+
+}
+.category-hover{
+  background: #f7f7f7;
+}
+.hot-door{
+
+}
+.record{
+
+}

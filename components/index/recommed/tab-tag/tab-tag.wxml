@@ -4,9 +4,9 @@
     <view slot="left">
       <icon class="iconfont icon-liebiao icon-class"></icon>
     </view>
-    <view slot="center">
-      <input type="text" class="tab-input"
-             placeholder="搜索" catchtap="goTosearch"></input>
+    <view slot="center" catchtap="goTosearch">
+      <input type="text" class="tab-input" value="{{inputData}}"
+             placeholder="搜索" ></input>
     </view>
     <view slot="right">
       <icon class="iconfont icon-gengduo1 icon-class"></icon>

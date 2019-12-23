@@ -1,0 +1,11 @@
+<!--pages/find-music/search-page/components/search-box/index.wxml-->
+<view class="search-box">
+  <view class="search-input">
+    <input type="text" class="input-any" value="{{inputData}}"
+           bind:confirm="handleinput" confirm-type="search"
+           placeholder="搜索音乐，歌词，电台" />
+  </view>
+  <view class="search-cancel" catchtap="gobackup">
+    <text>取消</text>
+  </view>
+</view>

@@ -3,7 +3,7 @@
   <!-- 搜索tab -->
   <scroll-view scroll-y="true" bind:scroll="handlescroll" class="scrollheight">
     <!-- 头部搜索框 -->
-    <tab-tag />
+    <tab-tag inputData="{{search_data}}"/>
     <!-- 吸顶标签 -->
     <tab-nav tab-nav-class="tab" wx:if="{{istabFixed}}" bind:tabindex="tabbarindex" current="{{current}}" />
     <!-- 切换标签 -->

@@ -1,1 +1,3 @@
 <!--pages/find-music/search-page/search-page.wxml-->
+<search-box bind:handle_input="handleinput" bind:goback="gobackup" inputData="{{inputData}}" />
+<search-hot doors="{{doors}}" />
