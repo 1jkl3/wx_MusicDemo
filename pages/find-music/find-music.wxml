@@ -9,37 +9,58 @@
     <!-- 切换标签 -->
     <tab-nav id="tabout" bind:tabindex="tabbarindex" current="{{current}}" />
     <!-- 切换标题 -->
-    <swiper wx:if="{{swiper_height != null}}" style="height:{{swiper_height+'px'}}" bindchange="handletopic" current="{{current}}">
+    <swiper style="height:{{swiper_height+'px'}}" bindchange="handletopic" current="{{current}}">
       <!-- 个性推荐 -->
       <swiper-item item-id="1">
         <view class="topic-view-0">
-          <!-- 轮播图 -->
-          <swiper-img imgsrc="{{img}}" />
-          <!-- 九宫格 -->
-          <t-grid class="show-class" />
-          <!-- 主题内容 -->
-          <music-list list="{{musicList}}" />
+          <!-- 加载数据 -->
+          <view wx:if="{{musicList.length != 0}}">
+            <!-- 轮播图 -->
+            <swiper-img imgsrc="{{musicList[0]}}" />
+            <!-- 九宫格 -->
+            <t-grid class="show-class" />
+            <!-- 主题内容 -->
+            <music-list list="{{musicList[1]}}" />
+          </view>
+          <view wx:else class="loading">
+            <load />
+          </view>
         </view>
       </swiper-item>
       <!-- 歌单 -->
       <swiper-item item-id="2">
         <view class="topic-view-1">
-          <palylist-header />
-          <palylist-music palyData="{{palyList}}" />
+          <view wx:if="{{palyList.length != 0}}">
+            <palylist-header />
+            <palylist-music palyData="{{palyList}}" />
+          </view>
+          <view wx:else class="loading">
+            <load />
+          </view>
         </view>
       </swiper-item>
       <!-- 主播电台 -->
       <swiper-item item-id="3">
         <view class="topic-view-2">
-          <station-swiper stationImg="{{stationImg}}" />
-          <station-category />
-          <station-body />
+          <view wx:if="{{stationBody.length != 0}}">
+            <station-swiper stationImg="{{stationBody[0]}}" />
+            <station-category />
+            <station-body stationBody="{{stationBody[1]}}" />
+          </view>
+          <view wx:else class="loading">
+            <load />
+          </view>
         </view>
       </swiper-item>
       <!-- 排行榜 -->
       <swiper-item item-id="4">
         <view class="topic-view-3">
-          <top-body />
+          <view wx:if="{{isTop}}">
+            <top-body topData="{{topData}}" />
+          </view>
+          <view wx:else class="loading">
+            <load />
+          </view>
         </view>
       </swiper-item>
     </swiper>

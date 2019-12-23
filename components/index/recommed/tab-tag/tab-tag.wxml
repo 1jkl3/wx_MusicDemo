@@ -5,7 +5,8 @@
       <icon class="iconfont icon-liebiao icon-class"></icon>
     </view>
     <view slot="center">
-      <input type="text" class="tab-input" placeholder="搜索"></input>
+      <input type="text" class="tab-input"
+             placeholder="搜索" catchtap="goTosearch"></input>
     </view>
     <view slot="right">
       <icon class="iconfont icon-gengduo1 icon-class"></icon>

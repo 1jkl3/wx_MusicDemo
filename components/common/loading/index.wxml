@@ -1,0 +1,4 @@
+<!--components/common/loading/index.wxml-->
+<view class="load-class">
+  <view class="loading"></view>
+</view>

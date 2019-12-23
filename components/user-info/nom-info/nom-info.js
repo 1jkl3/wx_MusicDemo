@@ -7,7 +7,10 @@ Component({
     addGlobalClass: true
   },
   properties: {
-
+    nomInfo:{
+      type:Object,
+      value:{}
+    }
   },
 
   /**

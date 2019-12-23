@@ -1,1 +1,7 @@
 /* pages/common-page/common-page.wxss */
+.test{
+  width: 100%;
+  height: 500rpx;
+  background: red;
+  position: relative;
+}

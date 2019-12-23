@@ -1,7 +1,6 @@
 /* pages/index/index.wxss */
 .scrollheight{
   height: 100vh;
-  /* height: 100%; */
 }
 .tab{
   position: fixed;
@@ -12,4 +11,9 @@
 }
 .show-class{
   border-bottom: 5px solid #F7F7F7;
+}
+.loading{
+  height: calc(100vh - 168rpx);
+  width: 100vw;
+  position: relative;
 }

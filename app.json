@@ -1,9 +1,10 @@
 {
   "pages": [
     "pages/find-music/find-music",
+    "pages/my-music/my-music",
     "pages/company/company",
     "pages/user-info/user-info",
-    "pages/my-music/my-music"
+    "pages/find-music/search-page/search-page"
   ],
   "window": {
     "backgroundTextStyle": "light",

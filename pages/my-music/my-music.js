@@ -1,16 +1,11 @@
 // pages/detail/detail.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   options: {
     addGlobalClass: true
   },
   data: {
     music_list:[],
-    storeSeletor:[],
-    test: ["nihao", "nibuhao"]
+    storeSeletor:[]
   },
   m_handle_scroll(e){
     // console.log(e)

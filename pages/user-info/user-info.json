@@ -2,6 +2,7 @@
   "usingComponents": {
     "tab-tag":"/components/user-info/tab-tag/tab-tag",
     "nom-info":"/components/user-info/nom-info/nom-info",
-    "function-list": "/components/user-info/function-list/function-list"
+    "function-list": "/components/user-info/function-list/function-list",
+    "load": "/components/common/loading/index"
   }
 }

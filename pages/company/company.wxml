@@ -3,17 +3,30 @@
   <scroll-view scroll-y bind:scroll="companyScroll" class="company-class">
     <!-- 头部标签 -->
     <tab-tag bind:select-page="switchPages" />
+    <!-- <view wx:if="{{dynamicsList.length != 0}}"> -->
     <!-- 动态 -->
     <view hidden="{{cutState != 0}}">
-      <!-- 标签动态 -->
-      <with-doing with-doing-class="hiddle-class" wx:if="{{istabFixed}}" />
-      <with-doing id="with-id" />
-      <!-- 动态主体 -->
-      <dynamics-body dynamicsList="{{dynamicsList}}" />
+      <view wx:if="{{dynamicsList.length != 0}}">
+        <!-- 标签动态 -->
+        <with-doing with-doing-class="hiddle-class" wx:if="{{istabFixed}}" />
+        <with-doing id="with-id" />
+        <!-- 动态主体 -->
+        <dynamics-body dynamicsList="{{dynamicsList}}" />
+      </view>
+      <view wx:else>
+        <load />
+      </view>
     </view>
     <view hidden="{{cutState != 1}}">
-      <head-box headList="{{nearbyDetail[0]}}" />
-      <nearby-body bodyList="{{nearbyDetail[1]}}" />
+      <view wx:if="{{nearbyDetail.length != 0}}">
+        <head-box headList="{{nearbyDetail[0]}}" />
+        <nearby-body bodyList="{{nearbyDetail[1]}}" />
+      </view>
+      <view wx:else>
+        <load />
+      </view>
     </view>
+    <!-- </view> -->
+
   </scroll-view>
 </view>

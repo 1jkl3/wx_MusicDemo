@@ -1,6 +1,11 @@
 <!--pages/category/category.wxml-->
 <scroll-view scroll-y class="user-info">
   <tab-tag />
-  <nom-info></nom-info>
-  <function-list functionList="{{list}}"></function-list>
+  <view wx:if="{{list.length != 0}}">
+    <nom-info nomInfo="{{list[0]}}" />
+    <function-list functionList="{{list[1]}}" />
+  </view>
+  <view wx:else>
+    <load />
+  </view>
 </scroll-view>

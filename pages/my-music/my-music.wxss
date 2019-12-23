@@ -2,3 +2,8 @@
 .music-class{
   height: 100vh;
 }
+.loading{
+  height: calc(100vh - 168rpx);
+  width: 100%;
+  position: relative;
+}

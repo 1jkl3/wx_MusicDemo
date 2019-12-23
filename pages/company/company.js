@@ -27,8 +27,18 @@ Page({
     this.setData({
       cutState: currentindex
     })
+    if(this.data.cutState === 0){
+      if (this.data.dynamicsList.length === 0){
+        this.get_dynamics_list();
+      }
+    }else{
+      if (this.data.nearbyDetail.length === 0){
+        this.get_nearby_detail();
+      }
+    }
   },
   get_dynamics_list:function(){
+    var that = this
     var dynamicsList = [
       {
         d_id: 0,
@@ -97,6 +107,18 @@ Page({
       this.setData({
         dynamicsList
       })
+      console.log("scrollTop")
+      wx.createSelectorQuery().select("#with-id")
+        .boundingClientRect(
+          function (res) {
+            if (res) {
+              const scrollTop = res.top
+              that.setData({
+                scrollTop
+              })
+            }
+          }
+        ).exec();
     },1000)
   },
   get_nearby_detail:function(){
@@ -155,18 +177,7 @@ Page({
    */
   onReady: function() {
     var that = this
-    that.get_dynamics_list();
-    that.get_nearby_detail();
-    wx.createSelectorQuery().select("#with-id")
-      .boundingClientRect(
-        function(res) {
-          if (res) {
-            const scrollTop = res.top
-            that.setData({
-              scrollTop
-            })
-          }
-        }
-      ).exec();
+    var e = {detail:{currentindex:0}}
+    that.switchPages(e);
   }
 })

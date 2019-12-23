@@ -4,7 +4,8 @@
     "with-doing":"/components/friends/with-doing/with-doing",
     "dynamics-body":"/components/friends/dynamics-body/dynamics-body",
     "head-box":"/components/friends/nearby/head-box/head-box",
-    "nearby-body":"/components/friends/nearby/nearby-body/nearby-body"
+    "nearby-body":"/components/friends/nearby/nearby-body/nearby-body",
+    "load": "/components/common/loading/index"
   },
   "disableScroll": true
 }

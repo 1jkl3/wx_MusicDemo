@@ -10,7 +10,8 @@
     "station-swiper": "/components/index/station/station-swiper/station-swiper",
     "station-category":"/components/index/station/station-category/station-category",
     "station-body": "/components/index/station/station-body/station-body",
-    "top-body": "/components/index/top/top-body"
+    "top-body": "/components/index/top/top-body",
+    "load": "/components/common/loading/index"
   },
   "disableScroll": true
 }

@@ -2,9 +2,12 @@
 <view>
   <scroll-view scroll-y bind:scroll="m_handle_scroll" class="music-class">
     <tab-tag />
-    <!--  localList="{{musiclist}}" -->
-    <!-- selectorAll="{{storeSeletor}}" -->
-    <music-list musiclist="{{music_list}}" />
-    <music-selector storeSeletor="{{storeSeletor}}" />
+    <view wx:if="{{music_list.length === 0 && storeSeletor.length === 0}}">
+      <load />
+    </view>
+    <view wx:else class="loading">
+      <music-list musiclist="{{music_list}}" />
+      <music-selector storeSeletor="{{storeSeletor}}" />
+    </view>
   </scroll-view>
 </view>
