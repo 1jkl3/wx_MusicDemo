@@ -4,7 +4,9 @@
     "pages/my-music/my-music",
     "pages/company/company",
     "pages/user-info/user-info",
-    "pages/find-music/search-page/search-page"
+    "pages/find-music/search-page/search-page",
+    "pages/song/song-list/index",
+    "pages/song/song-rank/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -107,7 +107,6 @@ Page({
       this.setData({
         dynamicsList
       })
-      console.log("scrollTop")
       wx.createSelectorQuery().select("#with-id")
         .boundingClientRect(
           function (res) {

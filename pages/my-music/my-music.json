@@ -1,8 +1,8 @@
 {
   "usingComponents": {
-    "tab-tag": "/components/music_me/tab-tag/tab-tag",
-    "music-list": "/components/music_me/music-local-list/music-local-list",
-    "music-selector": "/components/music_me/music-selector/music-selector",
+    "tab-tag": "/pages/my-music/components/tab-tag/tab-tag",
+    "music-list": "/pages/my-music/components/music-local-list/music-local-list",
+    "music-selector": "/pages/my-music/components/music-selector/music-selector",
     "load": "/components/common/loading/index"
   },
   "disableScroll": true

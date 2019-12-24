@@ -1,16 +1,16 @@
 {
   "usingComponents": {
-    "swiper-img":"/components/index/recommed/swiper-img/swiper-img",
-    "tab-tag":"/components/index/recommed/tab-tag/tab-tag",
     "tab-nav": "/components/common/tab-nav/tab-nav",
-    "t-grid": "/components/index/recommed/t-grid/t-grid",
-    "music-list": "/components/index/recommed/music-list/music-list",
-    "palylist-header":"/components/index/palylist/palylist-header/palylist-header",
-    "palylist-music": "/components/index/palylist/palylist-music/palylist-music",
-    "station-swiper": "/components/index/station/station-swiper/station-swiper",
-    "station-category":"/components/index/station/station-category/station-category",
-    "station-body": "/components/index/station/station-body/station-body",
-    "top-body": "/components/index/top/top-body",
+    "swiper-img": "/pages/find-music/components/recommed/swiper-img/swiper-img",
+    "tab-tag": "/pages/find-music/components/recommed/tab-tag/tab-tag",
+    "t-grid": "/pages/find-music/components/recommed/t-grid/t-grid",
+    "music-list": "/pages/find-music/components/recommed/music-list/music-list",
+    "palylist-header":"/pages/find-music/components/palylist/palylist-header/palylist-header",
+    "palylist-music": "/pages/find-music/components/palylist/palylist-music/palylist-music",
+    "station-swiper": "/pages/find-music/components/station/station-swiper/station-swiper",
+    "station-category":"/pages/find-music/components/station/station-category/station-category",
+    "station-body": "/pages/find-music/components/station/station-body/station-body",
+    "top-body": "/pages/find-music/components/top/top-body",
     "load": "/components/common/loading/index"
   },
   "disableScroll": true

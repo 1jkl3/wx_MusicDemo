@@ -1,10 +1,10 @@
 {
   "usingComponents": {
-    "tab-tag":"/components/friends/tab-tag/tab-tag",
-    "with-doing":"/components/friends/with-doing/with-doing",
-    "dynamics-body":"/components/friends/dynamics-body/dynamics-body",
-    "head-box":"/components/friends/nearby/head-box/head-box",
-    "nearby-body":"/components/friends/nearby/nearby-body/nearby-body",
+    "tab-tag":"/pages/company/components/tab-tag/tab-tag",
+    "with-doing":"/pages/company/components/with-doing/with-doing",
+    "dynamics-body":"/pages/company/components/dynamics-body/dynamics-body",
+    "head-box":"/pages/company/components/nearby/head-box/head-box",
+    "nearby-body":"/pages/company/components/nearby/nearby-body/nearby-body",
     "load": "/components/common/loading/index"
   },
   "disableScroll": true

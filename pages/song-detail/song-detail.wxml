@@ -1,6 +1,0 @@
-<!--pages/common-page/common-page.wxml-->
-<view>{{index}}</view>
-
-<view class="test">
-  <load />
-</view>

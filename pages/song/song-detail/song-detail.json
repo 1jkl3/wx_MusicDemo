@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "song-tag":"/pages/song/song-detail/components/song-tag/index",
+    "song-text":"/pages/song/song-detail/components/song-text/index",
+    "song-contrl": "/pages/song/song-detail/components/song-contrl/index"
+  }
+}
