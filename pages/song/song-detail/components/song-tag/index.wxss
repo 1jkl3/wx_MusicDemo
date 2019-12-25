@@ -1,1 +1,13 @@
 /* pages/song/song-detail/components/song-tag/index.wxss */
+.song-tag{
+  height: 120rpx;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.song-name{
+  font-size: 50rpx;
+}
+.song-author{
+  font-size: 28rpx;
+}

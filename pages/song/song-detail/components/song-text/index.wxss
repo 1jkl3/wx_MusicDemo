@@ -1,1 +1,86 @@
 /* pages/song/song-detail/components/song-text/index.wxss */
+.song-text{
+  height: 840rpx;
+  width: 100%;
+  position: relative;
+}
+.song-scroll{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.anim-view{
+  height: 400rpx;
+  width: 400rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin:-200rpx 0 0 -200rpx;
+}
+
+.anim-view>image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.move-class{
+  height: 300rpx;
+  width: 300rpx;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin:auto;
+  border-radius: 50%;
+}
+
+@keyframes movecircle{
+  0%{
+    width: 400rpx;
+    height: 400rpx;
+    border: 1rpx solid rgba(255, 255, 255, 1);
+  }
+  30%{
+    width: 510rpx;
+    height: 510rpx;
+    border: 1rpx solid rgba(255, 255, 255, 0.8);
+  }
+  50%{
+    width: 610rpx;
+    height: 610rpx;
+    border: 1rpx solid rgba(255, 255, 255, 0.6);
+  }
+  80%{
+    width: 700rpx;
+    height: 700rpx;
+    border: 1rpx solid rgba(255, 255, 255, 0.4);
+  }
+  99%{
+    width: 750rpx;
+    height: 750rpx;
+    border: 1rpx solid rgba(255, 255, 255, 0.1);
+  }
+  100%{
+    width: 0;
+    height: 0;
+    border: 1rpx solid rgba(255, 255, 255, 0);
+  }
+}
+@keyframes rotate{
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.lyric-class{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  color:white;
+  text-align: center;
+}

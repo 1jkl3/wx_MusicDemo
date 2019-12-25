@@ -1,2 +1,17 @@
 <!--pages/song/song-detail/components/song-text/index.wxml-->
-<text>pages/song/song-detail/components/song-text/index.wxml</text>
+<view class="song-text" catchtap="handleclick">
+  <view hidden="{{!isClick}}">
+    <view class="move-class" style="{{isActive?'animation: movecircle 5s infinite linear;':''}}">
+    </view>
+    <view class="anim-view" style="{{isActive?'animation: rotate 5s infinite linear;':''}}">
+      <image src="{{img}}"></image>
+    </view>
+  </view>
+  <scroll-view scroll-y class="song-scroll" hidden="{{isClick}}">
+    <view class="lyric-class">
+      <block wx:for="{{song_text}}" wx:key="index">
+        <view>{{item}}</view>
+      </block>
+    </view>
+  </scroll-view>
+</view>

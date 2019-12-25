@@ -1,0 +1,8 @@
+<!--pages/common-page/common-page.wxml-->
+<image src="{{img}}" class="bg-img"></image>
+<!-- <view class="song-detail">
+  <song-tag />
+  <song-text img="{{img}}"/>
+  <song-contrl /> -->
+  <!-- <audio id="song" src="{{src}}"></audio> -->
+<!-- </view> -->

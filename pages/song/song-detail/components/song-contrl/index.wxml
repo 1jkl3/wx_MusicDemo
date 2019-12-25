@@ -1,2 +1,25 @@
 <!--pages/song/song-detail/components/song-contrl/index.wxml-->
-<text>pages/song/song-detail/components/song-contrl/index.wxml</text>
+<view class="song-contrl">
+  <view class="contrl-interactive">
+    <block wx:for="{{interactive}}" wx:key="index">
+      <view>
+        <text>{{item}}</text>
+      </view>
+    </block>
+  </view>
+  <view class="contrl-planbar">
+    <view class="planbar-start">00:00</view>
+    <view class="planbar-progress">
+      <progress percent="20" color="#fff" backgroundColor="#b3b1b1" style="height:1rpx;width:100%" />
+    </view>
+    <view class="planbar-end">04:47</view>
+  </view>
+  <view class="contrl-flow">
+    <!-- <audio id="song" src="{{src}}"></audio> -->
+    <block wx:for="{{flow}}" wx:key="index">
+      <view catchtap="handle_contrl" data-index="{{index}}">
+        <text>{{item}}</text>
+      </view>
+    </block>
+  </view>
+</view>

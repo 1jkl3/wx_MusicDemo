@@ -1,1 +1,5 @@
 <!--pages/song/song-detail/components/song-tag/index.wxml-->
+<view class="song-tag">
+  <text class="song-name">青花瓷\n</text>
+  <text class="song-author">周杰伦</text>
+</view>

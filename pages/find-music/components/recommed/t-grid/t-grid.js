@@ -39,7 +39,13 @@ Component({
       var currentindex = e.currentTarget.dataset.index
       if (currentindex === 0){
         wx.navigateTo({
-          url: `/pages/song/song-detail/song-detail`
+          url: `/pages/song/song-detail/index`,
+          success: function () {
+            console.log(currentindex)
+          },
+          fail: function (err) {
+            console.log(err)
+          }
         })
       } else if (currentindex === 1){
         wx.navigateTo({
