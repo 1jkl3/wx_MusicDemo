@@ -8,11 +8,11 @@
     </block>
   </view>
   <view class="contrl-planbar">
-    <view class="planbar-start">00:00</view>
+    <view class="planbar-start">{{percent.percent_start}}</view>
     <view class="planbar-progress">
-      <progress percent="20" color="#fff" backgroundColor="#b3b1b1" style="height:1rpx;width:100%" />
+      <progress percent="{{percent.percent_num}}" color="#fff" backgroundColor="#b3b1b1" style="height:1rpx;width:100%" />
     </view>
-    <view class="planbar-end">04:47</view>
+    <view class="planbar-end">{{percent.percent_end}}</view>
   </view>
   <view class="contrl-flow">
     <!-- <audio id="song" src="{{src}}"></audio> -->

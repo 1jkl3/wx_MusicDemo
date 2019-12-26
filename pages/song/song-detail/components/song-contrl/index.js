@@ -8,7 +8,11 @@ Component({
     addGlobalClass: true
   },
   properties: {
-    isplay: Boolean
+    isplay: Boolean,
+    percent:{
+      type:Object,
+      value:{}
+    }
   },
 
   /**
@@ -73,10 +77,30 @@ Component({
     },
     //上一首歌
     goUpSong(){
+      console.log("播放")
+      let newArr = this.data.flow.map((item, index) => {
+        if (index === 2) {
+          item = this.data.iconOut
+        }
+        return item
+      })
+      this.setData({
+        flow: newArr
+      })
       this.triggerEvent("upSong",{})
     },
     //下一首歌
     goDownSong(){
+        console.log("播放")
+        let newArr = this.data.flow.map((item, index) => {
+          if (index === 2) {
+            item = this.data.iconOut
+          }
+          return item
+        })
+        this.setData({
+          flow: newArr
+        })
       this.triggerEvent("nextSong",{})
     }
   }

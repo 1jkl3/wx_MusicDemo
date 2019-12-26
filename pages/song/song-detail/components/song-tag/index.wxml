@@ -1,5 +1,5 @@
 <!--pages/song/song-detail/components/song-tag/index.wxml-->
 <view class="song-tag">
-  <text class="song-name">{{songInfo.name}}\n</text>
-  <text class="song-author">{{songInfo.author}}</text>
+  <text class="song-name">{{songInfo.song_title}}\n</text>
+  <text class="song-author">{{songInfo.song_author}}</text>
 </view>

@@ -1,8 +1,8 @@
 <!--pages/common-page/common-page.wxml-->
 <image src="{{img}}" class="bg-img"></image>
 <view class="song-detail">
-  <song-tag />
-  <song-text img="{{img}}" isActive="{{isplay}}"/>
-  <song-contrl bind:upSong="upSong" bind:nextSong="nextSong"
-  isplay="{{isplay}}" bind:isStop="handleText"/>
+  <song-tag songInfo="{{song_tag}}" />
+  <song-text img="{{img}}" isActive="{{isplay}}" />
+  <song-contrl bind:upSong="upSong" bind:nextSong="nextSong" bind:isStop="handleText"
+   isplay="{{isplay}}" percent="{{song_percent}}" />
 </view>
