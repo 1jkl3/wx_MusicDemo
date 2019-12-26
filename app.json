@@ -6,8 +6,10 @@
     "pages/user-info/user-info",
     "pages/find-music/search-page/search-page",
     "pages/song/song-list/index",
-    "pages/song/song-rank/index"
+    "pages/song/song-rank/index",
+    "pages/song/song-detail/index"
   ],
+  "requiredBackgroundModes": ["audio"],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#f50707",

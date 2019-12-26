@@ -3,7 +3,7 @@
   <view class="contrl-interactive">
     <block wx:for="{{interactive}}" wx:key="index">
       <view>
-        <text>{{item}}</text>
+        <text class="iconfont {{item}}"></text>
       </view>
     </block>
   </view>
@@ -17,8 +17,9 @@
   <view class="contrl-flow">
     <!-- <audio id="song" src="{{src}}"></audio> -->
     <block wx:for="{{flow}}" wx:key="index">
-      <view catchtap="handle_contrl" data-index="{{index}}">
-        <text>{{item}}</text>
+      <view class="flow-class">
+        <text catchtap="handle_contrl" data-index="{{index}}"
+         class="iconfont {{item}}"></text>
       </view>
     </block>
   </view>

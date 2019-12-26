@@ -41,3 +41,6 @@
   flex: 1;
   text-align: center;
 }
+.flow-class:nth-of-type(3){
+  transform: scale(2);
+}

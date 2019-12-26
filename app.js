@@ -4,6 +4,9 @@ App({
     
   },
   globalData: {
-    userInfo: null
+    userInfo: {},
+    audioId:"",
+    songInfo:{},
+    bgAudioManage:{}
   }
 })
