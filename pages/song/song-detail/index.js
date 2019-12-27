@@ -11,15 +11,13 @@ Page({
     isplay: false,
     songList: [],
     song_tag: {},
-    song_percent:{}
+    song_percent:{},
+    currentSrc:""
   },
   // 开关
   handleText(e) {
     var isplay = e.detail.isplay
     const bgAudio = app.globalData.bgAudioManage
-    console.log("是否暂停" + bgAudio.paused)
-    console.log("当前时间" + bgAudio.currentTime)
-    console.log("长度" + bgAudio.duration)
     this.setData({
       isplay
     })
@@ -59,6 +57,13 @@ Page({
         {
           song_id: 56461,
           song_author: "李荣浩",
+          song_src: "http://music.163.com/song/media/outer/url?id=1318234987.mp3",
+          song_title: "贝贝",
+          song_img: "/assets/img/4.jpg"
+        },
+        {
+          song_id: 56461,
+          song_author: "李荣浩",
           song_src: "http://music.163.com/song/media/outer/url?id=27731176.mp3",
           song_title: "模特",
           song_img: "/assets/img/3.jpg"
@@ -79,30 +84,51 @@ Page({
     })
     bgAudioManage.title = res.song_title
     bgAudioManage.src = res.song_src
+    app.globalData.bgAudioManage = bgAudioManage;
     bgAudioManage.onPlay(() => {
       console.log("开始")
+      this.setData({
+        isplay: true,
+        currentSrc: bgAudioManage.src
+      })
+    })
+    bgAudioManage.onEnded(() => {
+      console.log("结束")
+      this.auto_run(this.data.currentSrc);
+    })
+    bgAudioManage.onTimeUpdate(()=>{
       var percent_start = formatMinute(bgAudioManage.currentTime)
       var percent_end = formatMinute(bgAudioManage.duration)
       var percent_num = parseInt((bgAudioManage.currentTime / bgAudioManage.duration) * 100)
-      console.log(percent_num)
+      // console.log(percent_num)
       var song_percent = {
         percent_start,
         percent_num,
         percent_end
       }
       this.setData({
-        isplay: true,
         song_percent
       })
-      bgAudioManage.duration
     })
-    bgAudioManage.onEnded(() => {
-      console.log("结束")
-      this.nextSong();
+    bgAudioManage.onError((err)=>{
+      console.log(err)
+      wx.showToast({
+        title: '网络开小差咯~',
+        icon:"none",
+        duration:1000
+      })
     })
-    app.globalData.bgAudioManage = bgAudioManage;
   },
-
+  // 结束自动播放下一首
+  auto_run(src){
+    const songList = this.data.songList
+    let currentIndex = songList.findIndex(item => item.song_src === src) + 1
+    if (currentIndex >= songList.length){
+      this.createBgAudio(songList[0])
+    }else{
+      this.createBgAudio(songList[currentIndex])
+    }
+  },
   // 上一首
   upSong: function() {
     const songList = this.data.songList
@@ -124,7 +150,7 @@ Page({
   nextSong: function() {
     const songList = this.data.songList
     const bgAudio = app.globalData.bgAudioManage
-    var currentIndex = songList.findIndex(item => item.song_src === bgAudio.src) + 1
+    let currentIndex = songList.findIndex(item => item.song_src === bgAudio.src) + 1
     // console.log(songList[currentIndex])
     if (currentIndex < songList.length){
       this.createBgAudio(songList[currentIndex])
