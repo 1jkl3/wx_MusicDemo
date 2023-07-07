@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "vconsole": "^3.3.4",
+    "vconsole": "^3.15.1",
     "weui-miniprogram": "^0.3.0"
   }
 }
